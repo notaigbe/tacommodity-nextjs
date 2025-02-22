@@ -1,14 +1,14 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/style.css";
-import Swiper from "swiper";
-import { Navigation, Pagination } from "swiper/modules";
-import "swiper/css"
-import "swiper/css/navigation"
-import "swiper/css/pagination"
+// import Swiper from "swiper";
+// import { Navigation, Pagination } from "swiper/modules";
+// import "swiper/css"
+// import "swiper/css/navigation"
+// import "swiper/css/pagination"
 export default function Hero() {
-    const swiper = new Swiper(".swiper-container", {
-        modules: [Navigation, Pagination],
-      });
+    // const swiper = new Swiper(".swiper-container", {
+    //     modules: [Navigation, Pagination],
+    //   });
   return (
     <section id="hero">
       <div className={"hero-container"}>
