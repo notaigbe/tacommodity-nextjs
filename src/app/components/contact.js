@@ -155,7 +155,7 @@ export function PHAGROContact() {
         <div className="container" data-aos="fade-up">
   
           <div className="section-title">
-            <h2>Contact Us</h2>
+            <h2 style={{ color: "#1C5CA1" }}>Contact Us</h2>
           </div>
   
           <div className="row">
@@ -190,7 +190,7 @@ export function PHAGROContact() {
   
             <div className="col-lg-12" data-aos="fade-up" data-aos-delay="300">
               <div className="section-title">
-                <h2>Get a Quick Quote</h2>
+                <h2 style={{ color: "#1C5CA1" }}>Get in Touch</h2>
               </div>
               <form action="forms/contact.php" method="post" role="form" className="php-email-form">
                 {/* {% csrf_token %} */}

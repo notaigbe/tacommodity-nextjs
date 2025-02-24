@@ -3,10 +3,10 @@
   --foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ededed;
+    --foreground: #0a0a0a;
   }
 }
 
@@ -23,7 +23,7 @@ body {
 
 a {
   color: #214f3c;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 a:hover {
@@ -46,9 +46,9 @@ body {
 }
 
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   html {
-    color-scheme: dark;
+    color-scheme: light;
   }
 }
 
@@ -106,6 +106,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   padding: 0;
 }
 #topbar .contact-info a {
+  text-decoration: none !important;
   line-height: 0;
   color: #444;
   transition: 0.3s;

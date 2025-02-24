@@ -48,7 +48,7 @@ export default function RootLayout({ children }) {
       <body className={`${geistSans.variable} ${geistMono.variable} ${raleway.variable} ${opensans.variable}`}>
         {children}
       </body>
-
+          
     </html>
   );
 }

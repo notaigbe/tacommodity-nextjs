@@ -1,19 +1,23 @@
 import "../styles/style.css";
 
-export default function Topbar() {
+export default function Topbar({page}) {
   return (
     <section id="topbar" className="d-flex align-items-center">
       <div className="container d-flex justify-content-center justify-content-md-between">
         <div className="contact-info d-flex align-items-center">
-          {/* {% if page == 'Women_Sustainable_Group' %}
-        <i className="bi bi-envelope-fill"></i><a href="mailto:phagrocooperativeltd@gmail.com">phagrompc@tacommidty.com</a>
-        <i className="bi bi-phone-fill phone-icon"></i> <a href="tel:+2349031628802 ">+234 903 162 8802 </a>
-        {% else %} */}
+          {page == 'Women Sustainable Group' ? (
+            <>
+        <i className="bi bi-envelope-fill" style={{ color: "#1C5CA1" }}></i><a href="mailto:phagrocooperativeltd@gmail.com" style={{ color: "#1C5CA1" }}>phagrompc@tacommidty.com</a>
+        <i className="bi bi-phone-fill phone-icon" style={{ color: "#1C5CA1" }}></i> <a href="tel:+2349031628802 " style={{ color: "#1C5CA1" }}>+234 903 162 8802 </a>
+        </>
+          ):(
+            <>
           <i className="bi bi-envelope-fill"></i>
           <a href="mailto:info@tacommodity.com">info@tacommodity.com</a>
           <i className="bi bi-phone-fill phone-icon"></i>{" "}
           <a href="tel:+2348026031639">+234 802 603 1639</a>
-          {/* {% endif %} */}
+          </>
+           )}
         </div>
         <div className="social-links d-none d-md-block">
           <a href="https://www.x.com/farm_own" className="twitter">

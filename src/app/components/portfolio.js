@@ -60,7 +60,7 @@ function PHAGROPortfolio() {
     <section id="portfolio" className="portfolio section-bg">
       <div className="container" data-aos="fade-up" data-aos-delay="100">
         <div className="section-title">
-          <h2>Training</h2>
+          <h2 style={{ color: "#1C5CA1" }}>Training</h2>
           <p>
             We create strategic partnerships to provide training for our
             farmers. We equip our smallholder farmers to succeed as commercial

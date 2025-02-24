@@ -11,7 +11,7 @@ import { PHAGROPortfolio } from "@/app/components/portfolio";
 import { PHAGROContact } from "@/app/components/contact";
 import { PHAGROTeam } from "@/app/components/team";
 import Topbar from "@/app/components/topbar";
-import Header from "@/app/components/header";
+import { PHAGROHeader } from "@/app/components/header";
 import Breadcrumbs from "@/app/components/breadcrumbs";
 import { PHAGROAbout } from "@/app/components/about";
 import Stats from "@/app/components/stats";
@@ -24,9 +24,9 @@ export default function WomenSustainableGroup() {
     
     return(
         <>
-        <Topbar/>
-        <Header />
-        <Breadcrumbs />
+        <Topbar page="Women Sustainable Group"/>
+        <PHAGROHeader/>
+        <Breadcrumbs page="Women Sustainable Group"/>
         <main className={styles.main}>
             <PHAGROAbout />
             <Stats />

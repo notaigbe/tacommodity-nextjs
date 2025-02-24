@@ -1,9 +1,9 @@
-"use client"
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/style.css";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 export function TACommodityFooter() {
   const [year, setYear] = useState(new Date().getFullYear());
   return (
@@ -170,11 +170,11 @@ export function PHAGROFooter() {
               <p>
                 Port Harcourt Agro Commodity Multipurpose Co-Operative Society
                 Limited
-                <br />
+                </p>
                 <hr />
                 A Subsidiary of TA Commodity
                 <br />
-                <hr />
+                <hr/>
                 14 Tony Avenue, off NTA Road, Mgbuoba, <br />
                 Port Harcourt - Rivers State, Nigeria
                 <br />
@@ -191,8 +191,8 @@ export function PHAGROFooter() {
                 >
                   phagrompc@tacommodity.com
                 </a>
-                <br />
-              </p>
+                
+              
               <div className="social-links mt-3">
                 <a
                   href="https://twitter.com/farm_own"

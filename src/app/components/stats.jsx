@@ -15,7 +15,7 @@ export default function Stats() {
             <div className="count-box">
               <i
                 className="bi bi-simple-smile"
-                style={{ color: "#20b38e;" }}
+                style={{ color: "#20b38e" }}
               ></i>
               <span
                 data-purecounter-start="0"
@@ -33,7 +33,7 @@ export default function Stats() {
             data-aos-delay="200"
           >
             <div className="count-box">
-              <i className="bi bi-document-folder" style={{color: "#c042ff;"}}></i>
+              <i className="bi bi-document-folder" style={{color: "#c042ff"}}></i>
               <span
                 data-purecounter-start="0"
                 data-purecounter-end="521"
@@ -50,7 +50,7 @@ export default function Stats() {
             data-aos-delay="400"
           >
             <div className="count-box">
-              <i className="bi bi-live-support" style={{color: "#46d1ff;"}}></i>
+              <i className="bi bi-live-support" style={{color: "#46d1ff"}}></i>
               <span
                 data-purecounter-start="0"
                 data-purecounter-end="1463"
@@ -67,7 +67,7 @@ export default function Stats() {
             data-aos-delay="600"
           >
             <div className="count-box">
-              <i className="bi bi-users-alt-5" style={{color: "#ffb459;"}}></i>
+              <i className="bi bi-users-alt-5" style={{color: "#ffb459"}}></i>
               <span
                 data-purecounter-start="0"
                 data-purecounter-end="15"

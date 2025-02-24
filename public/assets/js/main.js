@@ -201,7 +201,7 @@
           filter: this.getAttribute('data-filter')
         });
         portfolioIsotope.on('arrangeComplete', function() {
-          AOS.refresh()
+          Aos.refresh()
         });
       }, true);
     }
@@ -235,7 +235,7 @@
    * Animation on scroll
    */
   window.addEventListener('load', () => {
-    AOS.init({
+    Aos.init({
       duration: 1000,
       easing: "ease-in-out",
       once: true,

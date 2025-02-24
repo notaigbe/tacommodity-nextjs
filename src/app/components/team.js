@@ -847,7 +847,7 @@ function PHAGROTeam() {
       <section id="team" className="team">
         <div className="container" data-aos="fade-up">
           <div className="section-title">
-            <h2>Our Team</h2>
+            <h2 style={{ color: "#1C5CA1" }}>Our Team</h2>
             <p>MEET OUR TEAM MEMBERS AND MANAGEMENT.</p>
           </div>
 

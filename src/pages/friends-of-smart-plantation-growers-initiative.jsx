@@ -10,7 +10,7 @@ import styles from "@/app/page.module.css";
 import Script from "next/script";
 import Breadcrumbs from "@/app/components/breadcrumbs";
 import Topbar from "@/app/components/topbar";
-import Header from "@/app/components/header";
+import {Header} from "@/app/components/header";
 import {TACommodityFooter} from "@/app/components/footer";
 export default function Projects() {
   useEffect(() => {

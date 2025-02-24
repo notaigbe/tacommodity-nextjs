@@ -80,7 +80,7 @@ export function PHAGROAbout() {
           <div className="col-lg-12 d-flex flex-column justify-content-center about-content">
             <section id="about" className="about">
               <div className="section-title">
-                <h2>About Us</h2>
+                <h2 style={{ color: "#1C5CA1" }}>About Us</h2>
               </div>
               <div className="row">
                 <div className="col">
