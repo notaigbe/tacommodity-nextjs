@@ -1,0 +1,57 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Users\notai\AppData\Roaming\npm\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.8.1
+2 info using node@v20.9.0
+3 silly config load:file:C:\Users\notai\AppData\Roaming\npm\node_modules\npm\npmrc
+4 silly config load:file:g:\notai\VSCodeProjects\tacommodity\.npmrc
+5 silly config load:file:C:\Users\notai\.npmrc
+6 silly config load:file:C:\Users\notai\AppData\Roaming\npm\etc\npmrc
+7 verbose title npm outdated
+8 verbose argv "outdated" "--json"
+9 verbose logfile logs-max:10 dir:G:\notai\VSCodeProjects\tacommodity\notai\packages\npm\_logs\2025-02-24T13_42_45_456Z-
+10 verbose logfile G:\notai\VSCodeProjects\tacommodity\notai\packages\npm\_logs\2025-02-24T13_42_45_456Z-debug-0.log
+11 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+12 silly logfile start cleaning logs, removing 2 files
+13 silly logfile done cleaning log files
+14 http fetch GET 200 https://registry.npmjs.org/@srexi%2fpurecounterjs 2248ms (cache updated)
+15 http fetch GET 200 https://registry.npmjs.org/eslint-config-next 4268ms (cache updated)
+16 http fetch GET 200 https://registry.npmjs.org/react 6948ms (cache updated)
+17 http fetch GET 200 https://registry.npmjs.org/eslint 7789ms (cache updated)
+18 http fetch GET 200 https://registry.npmjs.org/boxicons 8656ms (cache updated)
+19 http fetch GET https://registry.npmjs.org/aos attempt 1 failed with ETIMEDOUT
+20 http fetch GET https://registry.npmjs.org/postgres attempt 1 failed with ETIMEDOUT
+21 http fetch GET https://registry.npmjs.org/bootstrap attempt 1 failed with ETIMEDOUT
+22 http fetch GET https://registry.npmjs.org/next attempt 1 failed with ETIMEDOUT
+23 http fetch GET https://registry.npmjs.org/isotope-layout attempt 1 failed with ETIMEDOUT
+24 http fetch GET https://registry.npmjs.org/react-bootstrap-icons attempt 1 failed with ETIMEDOUT
+25 http fetch GET https://registry.npmjs.org/react-dom attempt 1 failed with ETIMEDOUT
+26 http fetch GET https://registry.npmjs.org/bootstrap-icons attempt 1 failed with ETIMEDOUT
+27 http fetch GET https://registry.npmjs.org/@eslint%2feslintrc attempt 1 failed with ETIMEDOUT
+28 http fetch GET https://registry.npmjs.org/swiper attempt 1 failed with ETIMEDOUT
+29 http fetch GET https://registry.npmjs.org/react-countup attempt 1 failed with ETIMEDOUT
+30 http fetch GET 200 https://registry.npmjs.org/bootstrap 32637ms attempt #2 (cache updated)
+31 http fetch GET 200 https://registry.npmjs.org/postgres 32656ms attempt #2 (cache updated)
+32 http fetch GET 200 https://registry.npmjs.org/aos 32672ms attempt #2 (cache updated)
+33 http fetch GET https://registry.npmjs.org/react-bootstrap-icons attempt 2 failed with ECONNRESET
+34 http fetch GET https://registry.npmjs.org/isotope-layout attempt 2 failed with ECONNRESET
+35 http fetch GET 200 https://registry.npmjs.org/next 44895ms attempt #2 (cache updated)
+36 http fetch GET https://registry.npmjs.org/@eslint%2feslintrc attempt 2 failed with ETIMEDOUT
+37 http fetch GET https://registry.npmjs.org/bootstrap-icons attempt 2 failed with ETIMEDOUT
+38 http fetch GET https://registry.npmjs.org/swiper attempt 2 failed with ETIMEDOUT
+39 http fetch GET https://registry.npmjs.org/react-dom attempt 2 failed with ETIMEDOUT
+40 http fetch GET https://registry.npmjs.org/react-countup attempt 2 failed with ETIMEDOUT
+41 http fetch GET 200 https://registry.npmjs.org/isotope-layout 95976ms attempt #3 (cache updated)
+42 http fetch GET 200 https://registry.npmjs.org/react-bootstrap-icons 96155ms attempt #3 (cache updated)
+43 http fetch GET 200 https://registry.npmjs.org/@eslint%2feslintrc 112590ms attempt #3 (cache updated)
+44 http fetch GET 200 https://registry.npmjs.org/bootstrap-icons 113879ms attempt #3 (cache updated)
+45 http fetch GET https://registry.npmjs.org/react-dom attempt 3 failed with ETIMEDOUT
+46 http fetch GET https://registry.npmjs.org/react-countup attempt 3 failed with ETIMEDOUT
+47 http fetch GET https://registry.npmjs.org/swiper attempt 3 failed with ETIMEDOUT
+48 http fetch GET 200 https://registry.npmjs.org/react-countup 133314ms (cache stale)
+49 http fetch GET 200 https://registry.npmjs.org/swiper 133318ms (cache stale)
+50 http fetch GET 200 https://registry.npmjs.org/react-dom 133326ms (cache stale)
+51 verbose cwd g:\notai\VSCodeProjects\tacommodity
+52 verbose os Windows_NT 10.0.22631
+53 verbose node v20.9.0
+54 verbose npm  v10.8.1
+55 verbose exit 1
+56 verbose code 1
