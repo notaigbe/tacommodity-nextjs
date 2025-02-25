@@ -1,8 +1,65 @@
+"use client";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/style.css";
 import Image from "next/image";
+import { useEffect, useState } from "react";
+import Script from "next/script";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function TACommodityPortfolio() {
+  const [Isotope, setIsotope] = useState(null);
+
+  useEffect(() => {
+    // Dynamically import Isotope to avoid SSR issues
+    import("isotope-layout").then((IsotopeModule) => {
+      setIsotope(() => IsotopeModule.default);
+    });
+  }, []);
+
+  useEffect(() => {
+    if (!Isotope) return; // Ensure Isotope is loaded before running the script
+
+    const portfolioContainer = document.querySelector(".portfolio-container");
+
+    if (portfolioContainer) {
+      const portfolioIsotope = new Isotope(portfolioContainer, {
+        itemSelector: ".portfolio-item",
+        layoutMode: "fitRows",
+      });
+
+      const portfolioFilters = document.querySelectorAll("#portfolio-flters li");
+
+      portfolioFilters.forEach((filter) => {
+        filter.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          // Remove active class from all filters
+          portfolioFilters.forEach((el) => el.classList.remove("filter-active"));
+          this.classList.add("filter-active");
+
+          // Filter portfolio items
+          portfolioIsotope.arrange({
+            filter: this.getAttribute("data-filter"),
+          });
+
+          // Refresh AOS after arranging
+          portfolioIsotope.on("arrangeComplete", () => {
+            Aos.refresh();
+          });
+        });
+      });
+
+      // Cleanup event listeners on unmount
+      return () => {
+        portfolioFilters.forEach((filter) =>
+          filter.removeEventListener("click", () => {})
+        );
+      };
+    }
+  }, [Isotope]);
+
+      
   return (
     <section id="portfolio" className="portfolio section-bg">
       <div className="container" data-aos="fade-up" data-aos-delay="100">
@@ -31,6 +88,7 @@ function TACommodityPortfolio() {
         </div>
 
         <div className="row portfolio-container">
+          
           {/* {% for article in articles %}
             {% if article.status == 1 %}
             <div className="col-lg-4 col-md-6 portfolio-item filter-{{ article.category }}">
@@ -50,11 +108,63 @@ function TACommodityPortfolio() {
             {% endfor %} */}
         </div>
       </div>
+      <Script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js" strategy="lazyOnload" defer />
     </section>
   );
 }
 
 function PHAGROPortfolio() {
+  const [Isotope, setIsotope] = useState(null);
+
+  useEffect(() => {
+    // Dynamically import Isotope to avoid SSR issues
+    import("isotope-layout").then((IsotopeModule) => {
+      setIsotope(() => IsotopeModule.default);
+    });
+  }, []);
+
+  useEffect(() => {
+    if (!Isotope) return; // Ensure Isotope is loaded before running the script
+
+    const portfolioContainer = document.querySelector(".portfolio-container");
+
+    if (portfolioContainer) {
+      const portfolioIsotope = new Isotope(portfolioContainer, {
+        itemSelector: ".portfolio-item",
+        layoutMode: "fitRows",
+      });
+
+      const portfolioFilters = document.querySelectorAll("#portfolio-flters li");
+
+      portfolioFilters.forEach((filter) => {
+        filter.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          // Remove active class from all filters
+          portfolioFilters.forEach((el) => el.classList.remove("filter-active"));
+          this.classList.add("filter-active");
+
+          // Filter portfolio items
+          portfolioIsotope.arrange({
+            filter: this.getAttribute("data-filter"),
+          });
+
+          // Refresh AOS after arranging
+          portfolioIsotope.on("arrangeComplete", () => {
+            Aos.refresh();
+          });
+        });
+      });
+
+      // Cleanup event listeners on unmount
+      return () => {
+        portfolioFilters.forEach((filter) =>
+          filter.removeEventListener("click", () => {})
+        );
+      };
+    }
+  }, [Isotope]);
+
   return (
     // {/* <!-- ======= Our Portfolio Section ======= --> */}
     <section id="portfolio" className="portfolio section-bg">
@@ -301,6 +411,7 @@ function PHAGROPortfolio() {
           </div>
         </div>
       </div>
+      <Script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js" strategy="lazyOnload" defer />
     </section>
   );
 }

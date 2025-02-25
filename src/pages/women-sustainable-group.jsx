@@ -7,6 +7,7 @@ import "@/app/globals.css";
 import "@/app/styles/style.css"
 import styles from "@/app/page.module.css"
 import Script from "next/script";
+import Head from "next/head";
 import { PHAGROPortfolio } from "@/app/components/portfolio";
 import { PHAGROContact } from "@/app/components/contact";
 import { PHAGROTeam } from "@/app/components/team";
@@ -24,6 +25,24 @@ export default function WomenSustainableGroup() {
     
     return(
         <>
+        <Head>
+            <title>Women Sustainable Group</title>
+            <meta content="Discover how the Women Sustainable Group by TA Commodity Producers Co Nig Ltd empowers rural women and youth in Nigeria through agricultural cooperatives, providing essential training, market access, and financial support for sustainable farming enterprises." name="description" />
+            <meta 
+          name="keywords" 
+          content="Women Sustainable Group, women in agriculture Nigeria, youth in agriculture Nigeria, rural women empowerment, sustainable farming Nigeria, agricultural cooperatives, women farmers support, smallholder farmers Nigeria, market access for farmers, women agripreneurs, fish farming in Niger Delta, cooperative farming Nigeria, women-led agribusiness, rural development in Nigeria, financial support for farmers, agricultural training programs, sustainable agribusiness models, women empowerment initiatives, agribusiness cooperatives in Africa, farming for women and youth" 
+        />
+        <meta name="author" content="TA Commodity Producers Co Nig Ltd" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="Women Sustainable Group - Empowering Women & Youth in Agriculture" />
+        <meta property="og:description" content="Supporting women and youth in agriculture through cooperatives, training, and market access in Nigeria." />
+        <meta property="og:image" content="/assets/img/phagro_logo.png" />
+        <meta property="og:url" content="https://tacommodity-nextjs.vercel.app/women-sustainable-group" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Women Sustainable Group - Empowering Women & Youth in Agriculture" />
+        <meta name="twitter:description" content="Promoting sustainable farming and economic growth for women and youth in Nigeria." />
+        <meta name="twitter:image" content="/assets/img/phagro_logo.png" />
+        </Head>
         <Topbar page="Women Sustainable Group"/>
         <PHAGROHeader/>
         <Breadcrumbs page="Women Sustainable Group"/>

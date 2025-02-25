@@ -8,6 +8,7 @@ import { useEffect } from "react";
 // import "swiper/css/navigation"
 // import "swiper/css/pagination"
 import Script from "next/script";
+import { TypeH1 } from "react-bootstrap-icons";
 export default function Hero() {
     // const swiper = new Swiper(".swiper-container", {
     //     modules: [Navigation, Pagination],
@@ -46,9 +47,9 @@ export default function Hero() {
                   <h2 className="animate__animated animate__fadeInDown">
                     Welcome to <span>TA Commodity Producers (Nig) Ltd</span>
                   </h2>
-                  <p className="animate__animated animate__fadeInUp">
+                  <h1 className="animate__animated animate__fadeInUp text-light">
                     We develop farms for smallholder farmers; provide finance, trainings, and seedlings with other farm inputs.
-                  </p>
+                  </h1>
                   <Link href="https://farmfresh.onrender.com" className="btn-get-started animate__animated animate__fadeInUp scrollto">
                     Shop <i className="bx bx-cart bx-fade-right bx-flip-horizontal"></i>
                   </Link>
@@ -61,10 +62,10 @@ export default function Hero() {
               <div className="carousel-container">
                 <div className="carousel-content container">
                   <h2 className="animate__animated animate__fadeInDown">Providing access to finance</h2>
-                  <p className="animate__animated animate__fadeInUp">
+                  <h1 className="animate__animated animate__fadeInUp text-light">
                     We develop farmers that lack access to financing through the combination of capacity building and provision of finance
                     with other farm inputs by bringing them into various associations and cooperatives.
-                  </p>
+                  </h1>
                   <Link href="https://farmfresh.onrender.com" className="btn-get-started animate__animated animate__fadeInUp scrollto">
                     Shop <i className="bx bx-cart bx-fade-right bx-flip-horizontal"></i>
                   </Link>
@@ -77,9 +78,9 @@ export default function Hero() {
               <div className="carousel-container">
                 <div className="carousel-content container">
                   <h2 className="animate__animated animate__fadeInDown">Providing access to market</h2>
-                  <p className="animate__animated animate__fadeInUp">
+                  <h1 className="animate__animated animate__fadeInUp text-light">
                     Create access to market through the aggregation of their farm produce and make them traceable to consumers.
-                  </p>
+                  </h1>
                   <Link href="https://farmfresh.onrender.com" className="btn-get-started animate__animated animate__fadeInUp scrollto">
                     Shop <i className="bx bx-cart bx-fade-right bx-flip-horizontal"></i>
                   </Link>

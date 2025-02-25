@@ -252,7 +252,7 @@ export function PHAGROHeader() {
           <div className="logo me-auto">
             
               <h1>
-                <a href="#" style={{ color: "#1C5CA1;" }}>
+                <a href="#" style={{ color: "#1C5CA1" }}>
                   <Image
                     src="/assets/img/phagro_logo.png"
                     alt="PHAGRO company logo"

@@ -36,10 +36,20 @@ export default function RootLayout({ children }) {
         {/* {% if page == 'Women_Sustainable_Group' %}
   <title>Port Harcourt Agro Commodity Cooperative Ltd</title>
   {% else %} */}
-        <title>TA Commodity Producers Co Nig Ltd - Index</title>
+        <title>TA Commodity Producers Co Nig Ltd - Connecting Smallholder Farmers to Markets</title>
         {/* {% endif %} */}
-        <meta content="" name="description" />
-        <meta content="" name="keywords" />
+        <meta content="TA Commodity Producers Co Nig Ltd helps smallholder farmers in Nigeria access global markets by trading high-quality agricultural commodities through sustainable and fair trade practices." name="description" />
+        <meta content="smallholder farmers, agricultural commodity trading, exporting Nigerian produce, market access for farmers, sustainable farming Nigeria, fair trade agriculture, Nigerian agricultural products, farm-to-market solutions, agricultural value chain, small-scale farming support, agro-export company Nigeria, connecting farmers to buyers, agricultural supply chain, sustainable farming solutions for smallholder farmers, fair trade opportunities for small-scale farmers" name="Smallholder farmers" />
+        <meta name="author" content="TA Commodity Producers Co Nig Ltd" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="TA Commodity Producers Co Nig Ltd - Connecting Smallholder Farmers to Markets" />
+        <meta property="og:description" content="Helping smallholder farmers in Nigeria access global markets by trading high-quality agricultural commodities." />
+        <meta property="og:image" content="/assets/img/ta_commodity_logo.png" />
+        <meta property="og:url" content="https://tacommodity-nextjs.vercel.app" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="TA Commodity Producers Co Nig Ltd" />
+        <meta name="twitter:description" content="Connecting smallholder farmers with buyers in global markets for fair trade and sustainable growth." />
+        <meta name="twitter:image" content="/assets/img/ta_commodity_logo.png" />
         <link href="assets/img/ta_commodity_logo.png" rel="icon" />
         <link href="assets/img/ta_logo.png" rel="apple-touch-icon" />
 

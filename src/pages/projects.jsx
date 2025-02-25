@@ -22,7 +22,7 @@ export default function Projects() {
     <>
     <Topbar />
     <Header />
-    <Breadcrumbs />
+    <Breadcrumbs page="Projects"/>
     <main className={styles.main}>
     <section className="inner-page">
       <div

@@ -54,7 +54,7 @@ export default function Home() {
 
       {/* ✅ Optimized Script Loading */}
       <Script src="/assets/js/main.js" strategy="lazyOnload" defer />
-      <Script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js" strategy="lazyOnload" defer />
+      {/* <Script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js" strategy="lazyOnload" defer /> */}
     </>
   );
 }

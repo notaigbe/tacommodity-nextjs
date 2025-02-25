@@ -22,7 +22,7 @@ export default function Projects() {
     <>
       <Topbar />
       <Header />
-      <Breadcrumbs />
+      <Breadcrumbs page="Friends of Smart Plantation Growers Inistiative"/>
       <section className="inner-page">
       <main id="main" className={styles.main}>
         
