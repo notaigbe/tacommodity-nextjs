@@ -26,10 +26,6 @@ export default function Breadcrumbs({page}) {
         </ol>
         </>
           )}
-          <ol>
-            <li><a href="/">Home</a></li>
-            <li>{ title }</li>
-          </ol>
         </div>
 
       </div>
