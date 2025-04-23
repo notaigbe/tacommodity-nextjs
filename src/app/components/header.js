@@ -9,18 +9,18 @@ import { List, X } from "react-bootstrap-icons";
 export function Header() {
   
   const [isActive, setIsActive] = useState(false);
-  const ref = useRef(null);
+  // const ref = useRef(null);
 
   useEffect(() => {
-    const handleClick = (event) => {
-      setIsActive(!isActive)
-      document.querySelector("#navbar").classList.toggle("navbar-mobile");
+    // const handleClick = (event) => {
+    //   setIsActive(!isActive)
+    //   document.querySelector("#navbar").classList.toggle("navbar-mobile");
  
-    };
+    // };
 
-    const element = ref.current;
+    // const element = ref.current;
 
-    element.addEventListener("click", handleClick);
+    // element.addEventListener("click", handleClick);
 
     const header = document.querySelector('#header');
     
@@ -55,9 +55,9 @@ export function Header() {
         });
     }
 
-    return () => {
-      element.removeEventListener("click", handleClick);
-    };
+    // return () => {
+    //   element.removeEventListener("click", handleClick);
+    // };
     
   }, []);
   
@@ -74,7 +74,7 @@ export function Header() {
                     alt="TA Commodity company logo"
                     width={50}
                     height={50}
-                    style={{ height: "auto" }}
+                    style={{ height: "auto", width: "auto" }}
                   />{" "}
                   TA Commodity
                 </Link>
@@ -164,7 +164,7 @@ export function Header() {
                         className="mobile-nav-toggle"
                         size={40}
                         id="navbar-toggle"
-                        ref={ref}
+                        // ref={ref}
                         onClick={()=>{setIsActive(!isActive);
                           document.querySelector('#navbar').classList.replace('navbar-mobile', 'navbar')
                           console.log(isActive)}}
@@ -174,7 +174,7 @@ export function Header() {
                         className="mobile-nav-toggle"
                         size={40}
                         id="navbar-toggle"
-                        ref={ref}
+                        // ref={ref}
                         onClick={()=>{setIsActive(!isActive);
                           document.querySelector('#navbar').classList.replace('navbar', 'navbar-mobile')
                         console.log(isActive)}}
@@ -194,18 +194,18 @@ export function Header() {
 export function PHAGROHeader() {
   
   const [isActive, setIsActive] = useState(false);
-  const ref = useRef(null);
+  // const ref = useRef(null);
 
   useEffect(() => {
-    const handleClick = (event) => {
-      setIsActive(!isActive)
-      document.querySelector("#navbar").classList.toggle("navbar-mobile");
+    // const handleClick = (event) => {
+    //   setIsActive(!isActive)
+    //   document.querySelector("#navbar").classList.toggle("navbar-mobile");
  
-    };
+    // };
 
-    const element = ref.current;
+    // const element = ref.current;
 
-    element.addEventListener("click", handleClick);
+    // element.addEventListener("click", handleClick);
 
     const header = document.querySelector('#header');
     
@@ -240,9 +240,9 @@ export function PHAGROHeader() {
         });
     }
 
-    return () => {
-      element.removeEventListener("click", handleClick);
-    };
+    // return () => {
+    //   element.removeEventListener("click", handleClick);
+    // };
     
   }, []);
   return (
@@ -349,7 +349,7 @@ export function PHAGROHeader() {
                         className="mobile-nav-toggle"
                         size={40}
                         id="navbar-toggle"
-                        ref={ref}
+                        // ref={ref}
                         onClick={()=>{setIsActive(!isActive);
                           document.querySelector('#navbar').classList.replace('navbar-mobile', 'navbar')
                           console.log(isActive)}}
@@ -359,7 +359,7 @@ export function PHAGROHeader() {
                         className="mobile-nav-toggle"
                         size={40}
                         id="navbar-toggle"
-                        ref={ref}
+                        // ref={ref}
                         onClick={()=>{setIsActive(!isActive);
                           document.querySelector('#navbar').classList.replace('navbar', 'navbar-mobile')
                         console.log(isActive)}}
