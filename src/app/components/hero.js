@@ -50,8 +50,11 @@ export default function Hero() {
                   <h1 className="animate__animated animate__fadeInUp text-light">
                     We develop farms for smallholder farmers; provide finance, trainings, and seedlings with other farm inputs.
                   </h1>
-                  <Link href="https://farmfresh.onrender.com" className="btn-get-started animate__animated animate__fadeInUp scrollto">
+                  {/* <Link href="https://farmfresh.onrender.com" className="btn-get-started animate__animated animate__fadeInUp scrollto">
                     Shop <i className="bx bx-cart bx-fade-right bx-flip-horizontal"></i>
+                  </Link> */}
+                  <Link href="/commodity-and-trade" className="btn-get-started animate__animated animate__fadeInUp scrollto">
+                    Commodity and Trade <i className="bx bx-cart bx-fade-right bx-flip-horizontal"></i>
                   </Link>
                 </div>
               </div>
@@ -63,17 +66,35 @@ export default function Hero() {
                 <div className="carousel-content container">
                   <h2 className="animate__animated animate__fadeInDown">Providing access to finance</h2>
                   <h1 className="animate__animated animate__fadeInUp text-light">
-                    We develop farmers that lack access to financing through the combination of capacity building and provision of finance
-                    with other farm inputs by bringing them into various associations and cooperatives.
+                  We export RSPO Certified Oil Palm – Grown with Care, Delivered with Integrity
                   </h1>
-                  <Link href="https://farmfresh.onrender.com" className="btn-get-started animate__animated animate__fadeInUp scrollto">
-                    Shop <i className="bx bx-cart bx-fade-right bx-flip-horizontal"></i>
+                  <Link href="/commodity-and-trade" className="btn-get-started animate__animated animate__fadeInUp scrollto">
+                    Learn More <i className="bx bx-cart bx-fade-right bx-flip-horizontal"></i>
                   </Link>
                 </div>
               </div>
             </div>
 
             {/* Slide 3 */}
+            <div className="carousel-item" style={{ backgroundImage: "url('/assets/img/slide/maize-farming.jpg')" }}>
+              <div className="carousel-container">
+                <div className="carousel-content container">
+                  <h2 className="animate__animated animate__fadeInDown">Providing access to finance</h2>
+                  <h1 className="animate__animated animate__fadeInUp text-light">
+                    We develop farmers that lack access to financing through the combination of capacity building and provision of finance
+                    with other farm inputs by bringing them into various associations and cooperatives.
+                  </h1>
+                  {/* <Link href="https://farmfresh.onrender.com" className="btn-get-started animate__animated animate__fadeInUp scrollto">
+                    Shop <i className="bx bx-cart bx-fade-right bx-flip-horizontal"></i>
+                  </Link> */}
+                  <Link href="/commodity-and-trade" className="btn-get-started animate__animated animate__fadeInUp scrollto">
+                    Commodity and Trade <i className="bx bx-cart bx-fade-right bx-flip-horizontal"></i>
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            {/* Slide 4 */}
             <div className="carousel-item" style={{ backgroundImage: "url('/assets/img/slide/palm_plantation.jpg')" }}>
               <div className="carousel-container">
                 <div className="carousel-content container">
@@ -81,8 +102,11 @@ export default function Hero() {
                   <h1 className="animate__animated animate__fadeInUp text-light">
                     Create access to market through the aggregation of their farm produce and make them traceable to consumers.
                   </h1>
-                  <Link href="https://farmfresh.onrender.com" className="btn-get-started animate__animated animate__fadeInUp scrollto">
+                  {/* <Link href="https://farmfresh.onrender.com" className="btn-get-started animate__animated animate__fadeInUp scrollto">
                     Shop <i className="bx bx-cart bx-fade-right bx-flip-horizontal"></i>
+                  </Link> */}
+                  <Link href="/commodity-and-trade" className="btn-get-started animate__animated animate__fadeInUp scrollto">
+                    Commodity and Trade <i className="bx bx-cart bx-fade-right bx-flip-horizontal"></i>
                   </Link>
                 </div>
               </div>

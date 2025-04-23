@@ -9,7 +9,7 @@ export default function Breadcrumbs({page}) {
       <div className="container">
 
         <div className="d-flex justify-content-between align-items-center">
-          {page=="Women Sustainable Group" ? (
+          {page!=="Projects" ? (
             <>
             <h2>{ page }</h2>
             <ol>

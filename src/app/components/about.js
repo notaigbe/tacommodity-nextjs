@@ -1,8 +1,21 @@
+'use client';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/style.css";
 import Image from "next/image";
+// import 'venobox/dist/venobox.min.css';
+import { useEffect } from "react";
 
 export function TACommodityAbout() {
+  // useEffect(() => {
+  //   // Dynamically import Venobox only on the client
+  //   import('jquery').then(($) => {
+  //     import('venobox').then(() => {
+  //       $(document).ready(function () {
+  //         $('.venobox').venobox(); // initialize Venobox
+  //       });
+  //     });
+  //   });
+  // }, []);
   return (
     <section id="about" className="about">
       <div className="container" data-aos="fade-up">
@@ -23,6 +36,7 @@ export function TACommodityAbout() {
               data-maxwidth="800px"
               data-autoplay="true"
             ></a>
+            
           </div>
 
           <div className="col-lg-6 d-flex flex-column justify-content-center about-content">

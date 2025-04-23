@@ -16,14 +16,18 @@
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
     "boxicons": "^2.1.4",
+    "fslightbox-react": "^1.8.0",
     "isotope-layout": "^3.0.6",
+    "jquery": "^3.7.1",
     "next": "15.1.7",
     "postgres": "^3.4.5",
     "react": "^19.0.0",
     "react-bootstrap-icons": "^1.11.5",
     "react-countup": "^6.5.3",
     "react-dom": "^19.0.0",
-    "swiper": "^11.2.4"
+    "swiper": "^11.2.4",
+    "venobox": "^2.1.8",
+    "yet-another-react-lightbox": "^3.22.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

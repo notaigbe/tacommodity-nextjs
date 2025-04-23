@@ -1,0 +1,43 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Users\notai\AppData\Roaming\npm\node_modules\npm\bin\npm-cli.js
+1 info using npm@11.1.0
+2 info using node@v22.14.0
+3 silly config load:file:C:\Users\notai\AppData\Roaming\npm\node_modules\npm\npmrc
+4 silly config load:file:g:\notai\VSCodeProjects\tacommodity\.npmrc
+5 silly config load:file:C:\Users\notai\.npmrc
+6 silly config load:file:C:\Users\notai\AppData\Roaming\npm\etc\npmrc
+7 verbose title npm outdated
+8 verbose argv "outdated" "--json"
+9 verbose logfile logs-max:10 dir:G:\notai\VSCodeProjects\tacommodity\notai\packages\npm\_logs\2025-04-21T05_57_22_791Z-
+10 verbose logfile G:\notai\VSCodeProjects\tacommodity\notai\packages\npm\_logs\2025-04-21T05_57_22_791Z-debug-0.log
+11 silly logfile start cleaning logs, removing 1 files
+12 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+13 silly logfile done cleaning log files
+14 http fetch GET 200 https://registry.npmjs.org/react-bootstrap-icons 1355ms (cache updated)
+15 http fetch GET 200 https://registry.npmjs.org/boxicons 1484ms (cache updated)
+16 http fetch GET 200 https://registry.npmjs.org/isotope-layout 1568ms (cache updated)
+17 http fetch GET 200 https://registry.npmjs.org/@srexi%2fpurecounterjs 1602ms (cache updated)
+18 http fetch GET 200 https://registry.npmjs.org/aos 1649ms (cache updated)
+19 http fetch GET 200 https://registry.npmjs.org/bootstrap-icons 1720ms (cache updated)
+20 http fetch GET 200 https://registry.npmjs.org/jquery 1730ms (cache updated)
+21 http fetch GET 200 https://registry.npmjs.org/postgres 1752ms (cache updated)
+22 http fetch GET 200 https://registry.npmjs.org/venobox 1767ms (cache updated)
+23 http fetch GET 200 https://registry.npmjs.org/bootstrap 1803ms (cache updated)
+24 http fetch GET 200 https://registry.npmjs.org/react-countup 1802ms (cache updated)
+25 http fetch GET 200 https://registry.npmjs.org/@eslint%2feslintrc 1833ms (cache updated)
+26 http fetch GET 200 https://registry.npmjs.org/yet-another-react-lightbox 1848ms (cache updated)
+27 http fetch GET 200 https://registry.npmjs.org/swiper 1971ms (cache updated)
+28 http fetch GET 200 https://registry.npmjs.org/eslint 2088ms (cache updated)
+29 http fetch GET 200 https://registry.npmjs.org/@types%2freact 2172ms (cache updated)
+30 http fetch GET 200 https://registry.npmjs.org/@aws-sdk%2fclient-s3 2280ms (cache updated)
+31 http fetch GET 200 https://registry.npmjs.org/react 2452ms (cache updated)
+32 http fetch GET 200 https://registry.npmjs.org/react-dom 2483ms (cache updated)
+33 http fetch GET 200 https://registry.npmjs.org/aws-sdk 2546ms (cache updated)
+34 http fetch GET 200 https://registry.npmjs.org/eslint-config-next 2578ms (cache updated)
+35 http fetch GET 200 https://registry.npmjs.org/@types%2fnode 2646ms (cache updated)
+36 http fetch GET 200 https://registry.npmjs.org/next 3948ms (cache updated)
+37 verbose cwd g:\notai\VSCodeProjects\tacommodity
+38 verbose os Windows_NT 10.0.22631
+39 verbose node v22.14.0
+40 verbose npm  v11.1.0
+41 verbose exit 1
+42 verbose code 1
