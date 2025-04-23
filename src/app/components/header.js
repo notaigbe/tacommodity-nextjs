@@ -9,18 +9,8 @@ import { List, X } from "react-bootstrap-icons";
 export function Header() {
   
   const [isActive, setIsActive] = useState(false);
-  // const ref = useRef(null);
 
   useEffect(() => {
-    // const handleClick = (event) => {
-    //   setIsActive(!isActive)
-    //   document.querySelector("#navbar").classList.toggle("navbar-mobile");
- 
-    // };
-
-    // const element = ref.current;
-
-    // element.addEventListener("click", handleClick);
 
     const header = document.querySelector('#header');
     
@@ -54,10 +44,6 @@ export function Header() {
             preloader.remove()
         });
     }
-
-    // return () => {
-    //   element.removeEventListener("click", handleClick);
-    // };
     
   }, []);
   
@@ -216,21 +202,6 @@ export function PHAGROHeader() {
     
       window.addEventListener('load', headerScrolled);
       document.addEventListener('scroll', headerScrolled);
-    }
-
-    const backtotop = document.querySelector('.back-to-top');
-    
-    if (backtotop) {
-      const toggleBacktotop = () => {
-        if (window.scrollY > 100) {
-          backtotop.classList.add('active');
-        } else {
-          backtotop.classList.remove('active');
-        }
-      };
-    
-      window.addEventListener('load', toggleBacktotop);
-      document.addEventListener('scroll', toggleBacktotop);
     }
 
     let preloader = document.querySelector('#preloader');
