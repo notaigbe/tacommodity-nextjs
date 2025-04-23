@@ -21,7 +21,7 @@ export default function WhatWeDo() {
             <h4 className="title">
               <a href="">Logistics</a>
             </h4>
-            <p className="description">
+            <p className="description lead" style={{ fontSize: 20 }}>
               We provide warehousing, logistics handling and haulage service for
               agro commodities to deliver to processing companies and consumers.
             </p>
@@ -37,7 +37,7 @@ export default function WhatWeDo() {
             <h4 className="title">
               <a href="">Training</a>
             </h4>
-            <p className="description">
+            <p className="description lead" style={{ fontSize: 20 }}>
               Training of farmers on modern practices and the use of Technology,
               Smart Agriculture in farming business with the aim of developing
               smallholder farmers into commercial farmers.
@@ -54,7 +54,7 @@ export default function WhatWeDo() {
             <h4 className="title">
               <a href="">Financing</a>
             </h4>
-            <p className="description">
+            <p className="description lead" style={{ fontSize: 20 }}>
               We promote financial inclusion amongst smallholder farmers through
               collaboration with selected insurance and financial institutions.
             </p>

@@ -42,7 +42,7 @@ export function TACommodityAbout() {
           <div className="col-lg-6 d-flex flex-column justify-content-center about-content">
             <div className="section-title">
               <h2>About Us</h2>
-              <p>
+              <p style={{ fontSize: 17 }}>
                 TA Commodity producers Company Nigeria Limited is a Social
                 Impact agricultural company registered in Nigeria on the 10th of
                 August 2018, for the business of farm development. The company
@@ -60,7 +60,7 @@ export function TACommodityAbout() {
               <h4 className="title">
                 <a href="">Vision</a>
               </h4>
-              <p className="description">
+              <p className="description text-muted" style={{ fontSize: 20 }}>
                 To produce and deliver reliable farm fresh produce from farmers,
                 which are traceable, to various processors and consumers...
               </p>
@@ -73,7 +73,7 @@ export function TACommodityAbout() {
               <h4 className="title">
                 <a href="">Mission</a>
               </h4>
-              <p className="description">
+              <p className="description text-muted" style={{ fontSize: 20 }}>
                 To produce reliable consumer fresh farm produce through the use
                 and application of technology and trained farmers as a means to
                 achieving sustainable livelihood income and food security.
@@ -138,7 +138,7 @@ export function PHAGROAbout() {
                   />
                 </div>
               </div>
-              <p>
+              <p className="lead">
                 Women Sustainable Group is promoted by TA Commodity Producers Co
                 Nig Limited for women farmers. This group brings together women
                 and youths in agriculture especially smallholder farmers into
@@ -149,7 +149,7 @@ export function PHAGROAbout() {
               </p>
               <br />
 
-              <p>
+              <p className="lead">
                 Port Harcourt Agro Commodity Multipurpose Cooperative Limited
                 was born out of such women sustainable group. The focus of the
                 group is to target the sustainability of fish farmers in the
@@ -161,7 +161,7 @@ export function PHAGROAbout() {
               </p>
               <br />
 
-              <p>
+              <p className="lead">
                 This cooperative helps smallholder fish farmers increase their
                 access and improve their negotiating power with respect to
                 acquiring a wide range of services including knowledge and
@@ -171,7 +171,7 @@ export function PHAGROAbout() {
               </p>
               <br />
 
-              <p>
+              <p className="lead">
                 As sustainability-focused group, the cooperative increases
                 community awareness of protected land areas, clean water,
                 education in nutrition and making sure there is a clean
@@ -237,7 +237,7 @@ export function FOSPGIAbout() {
                 />
               </div>
             </div>
-            <p>
+            <p className="lead">
               Women Sustainable Group is promoted by TA Commodity Producers Co
               Nig Limited for women farmers. This group brings together women
               and youths in agriculture especially smallholder farmers into
@@ -248,7 +248,7 @@ export function FOSPGIAbout() {
             </p>
             <br />
 
-            <p>
+            <p className="lead">
               Port Harcourt Agro Commodity Multipurpose Cooperative Limited was
               born out of such women sustainable group. The focus of the group
               is to target the sustainability of fish farmers in the rural areas
@@ -260,7 +260,7 @@ export function FOSPGIAbout() {
             </p>
             <br />
 
-            <p>
+            <p className="lead">
               This cooperative helps smallholder fish farmers increase their
               access and improve their negotiating power with respect to
               acquiring a wide range of services including knowledge and
@@ -270,7 +270,7 @@ export function FOSPGIAbout() {
             </p>
             <br />
 
-            <p>
+            <p className="lead">
               As sustainability-focused group, the cooperative increases
               community awareness of protected land areas, clean water,
               education in nutrition and making sure there is a clean

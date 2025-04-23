@@ -32,12 +32,12 @@ export default function Projects() {
         data-aos-once="true"
       >
         {/* {% if page == 'Projects' %} */}
-        <p>
+        <p className="lead">
           We develop agricultural farms for smallholder farmers especially women
           and youths;
         </p>
         <br />
-        <ul>
+        <ul className="lead">
           <li>
             We develop farms for smallholder farmers; provide finance,
             training's and seedlings with other farm inputs.
@@ -96,12 +96,12 @@ export default function Projects() {
         data-aos-once="false"
       >
         <h3>CROPS WE PROMOTE FOR CULTIVATION:</h3>
-        <p>
+        <p className="lead">
           Our smallholder farmers’ targeted commodities include but not limited
           to:
         </p>
         <br />
-        <ul>
+        <ul className="lead">
           <li>
             <strong>Cereals</strong> (Rice, Maize, wheat etc); Cotton.
           </li>
@@ -134,7 +134,7 @@ export default function Projects() {
         data-aos-once="false"
       >
         <h3>CURRENT SMALLHOLDER FARMS DEVELOPMENT PROJECTS:</h3>
-        <ul>
+        <ul className="lead">
           <li>
             <strong>
               Okomu Oil Palm 5,000 hectares smallholder oil palm farm project in
@@ -190,7 +190,7 @@ export default function Projects() {
         data-aos-delay="200"
         data-aos-once="false"
       >
-        <p>
+        <p style={{ fontSize: 20 }}>
           <strong>
             TERRA AGRARISCH LIMITED [Farming Finance &amp; Funding for
             Agricultural Infrastructural Projects].
@@ -201,7 +201,7 @@ export default function Projects() {
           local and international partners.
         </p>
         <br />
-        <ul>
+        <ul className="lead">
           <li>
             Business Focus of the subsidiary company is based on the following
             agricultural project areas;

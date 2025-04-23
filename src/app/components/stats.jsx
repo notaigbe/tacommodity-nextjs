@@ -23,7 +23,7 @@ export default function Stats() {
                 data-purecounter-duration="1"
                 className="purecounter"
               ><CountUp end={232} duration={1}></CountUp></span>
-              <p>Women Entrepreneurs Trained</p>
+              <p style={{ fontSize: 20 }}>Women Entrepreneurs Trained</p>
             </div>
           </div>
 
@@ -40,7 +40,7 @@ export default function Stats() {
                 data-purecounter-duration="1"
                 className="purecounter"
               ><CountUp end={521} duration={1}></CountUp></span>
-              <p>Women-Led Businesses Funded</p>
+              <p style={{ fontSize: 20 }}>Women-Led Businesses Funded</p>
             </div>
           </div>
 
@@ -57,7 +57,7 @@ export default function Stats() {
                 data-purecounter-duration="1"
                 className="purecounter"
               ><CountUp end={1463} duration={1}></CountUp></span>
-              <p>Smallholder Farmers Supported</p>
+              <p style={{ fontSize: 20 }}>Smallholder Farmers Supported</p>
             </div>
           </div>
 
@@ -74,7 +74,7 @@ export default function Stats() {
                 data-purecounter-duration="1"
                 className="purecounter"
               ><CountUp end={15} duration={1}></CountUp></span>
-              <p>Projects</p>
+              <p style={{ fontSize: 20 }}>Projects Ongoing/Completed</p>
             </div>
           </div>
         </div>

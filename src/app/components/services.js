@@ -18,7 +18,7 @@ export default function Services() {
             <h4 className="title">
               <a href="">Development</a>
             </h4>
-            <p className="description">
+            <p className="description lead" style={{ fontSize: 20 }}>
               We believe that our smallholder farmers who deliver our farm
               produce be trained and developed into commercial farmers over a
               period of time.
@@ -35,7 +35,7 @@ export default function Services() {
             <h4 className="title">
               <a href="">Innovation</a>
             </h4>
-            <p className="description">
+            <p className="description lead" style={{ fontSize: 20 }}>
               We grow with our farmers through innovation, training and
               application of technology in smallholder farm development.
             </p>
@@ -51,7 +51,7 @@ export default function Services() {
             <h4 className="title">
               <a href="">Integrity</a>
             </h4>
-            <p className="description">
+            <p className="description lead" style={{ fontSize: 20 }}>
               We integrate honesty, integrity and business ethics into all
               aspects of our smallholder farm development business to attract
               more prospective farmers into our various farm projects.
