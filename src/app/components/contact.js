@@ -12,7 +12,7 @@ export function TACommodityContact() {
 
         <div className="row">
           <div className="col-lg-6 d-flex" data-aos="fade-up">
-            <div className="info-box">
+            <div className="info-box border">
               <i className="bx bx-map"></i>
               <h3>Our Address</h3>
               <div className="row">
@@ -46,7 +46,7 @@ export function TACommodityContact() {
             data-aos="fade-up"
             data-aos-delay="100"
           >
-            <div className="info-box">
+            <div className="info-box border">
               <i className="bx bx-envelope"></i>
               <h3>Email Us</h3>
               <p>
@@ -60,7 +60,7 @@ export function TACommodityContact() {
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            <div className="info-box ">
+            <div className="info-box border">
               <i className="bx bx-phone-call"></i>
               <h3>Call Us</h3>
               <p>

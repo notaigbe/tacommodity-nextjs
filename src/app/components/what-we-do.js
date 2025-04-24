@@ -4,16 +4,17 @@ import "../styles/style.css";
 export default function WhatWeDo() {
   return (
     <section id="what-we-do" className="services bg-light">
-      <div className="container bg-white shadow" data-aos="fade-up">
+      <div className="container" data-aos="fade-up">
         <div className="section-title">
           <h2>What We Do</h2>
         </div>
 
         <div className="row">
           <div
-            className="col-lg-4 col-md-6 icon-box"
+            className="col-lg-4 col-md-6 icon-box border p-3 bg-white"
             data-aos="fade-up"
             data-aos-delay="300"
+            style={{ borderRadius: 20 }}
           >
             <div className="icon">
               <i className="bi bi-broadcast"></i>
@@ -27,9 +28,10 @@ export default function WhatWeDo() {
             </p>
           </div>
           <div
-            className="col-lg-4 col-md-6 icon-box"
+            className="col-lg-4 col-md-6 icon-box border p-3 bg-white"
             data-aos="fade-up"
             data-aos-delay="400"
+            style={{ borderRadius: 20 }}
           >
             <div className="icon">
               <i className="bi bi-brightness-high"></i>
@@ -44,9 +46,10 @@ export default function WhatWeDo() {
             </p>
           </div>
           <div
-            className="col-lg-4 col-md-6 icon-box"
+            className="col-lg-4 col-md-6 icon-box border p-3 bg-white"
             data-aos="fade-up"
             data-aos-delay="500"
+            style={{ borderRadius: 20 }}
           >
             <div className="icon">
               <i className="bi bi-calendar2-week"></i>

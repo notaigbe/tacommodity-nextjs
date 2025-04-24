@@ -1,7 +1,7 @@
 import { Geist, Geist_Mono, Raleway, Open_Sans } from "next/font/google";
 import "./globals.css";
 // import "./styles/styles.css"
-import Script from "next/script";
+// import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,11 +33,8 @@ export default function RootLayout({ children }) {
       <head>
       <meta charSet="utf-8" />
         <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-        {/* {% if page == 'Women_Sustainable_Group' %}
-  <title>Port Harcourt Agro Commodity Cooperative Ltd</title>
-  {% else %} */}
+        
         <title>TA Commodity Producers Co Nig Ltd - Connecting Smallholder Farmers to Markets</title>
-        {/* {% endif %} */}
         <meta content="TA Commodity Producers Co Nig Ltd helps smallholder farmers in Nigeria access global markets by trading high-quality agricultural commodities through sustainable and fair trade practices." name="description" />
         <meta content="smallholder farmers, agricultural commodity trading, exporting Nigerian produce, market access for farmers, sustainable farming Nigeria, fair trade agriculture, Nigerian agricultural products, farm-to-market solutions, agricultural value chain, small-scale farming support, agro-export company Nigeria, connecting farmers to buyers, agricultural supply chain, sustainable farming solutions for smallholder farmers, fair trade opportunities for small-scale farmers" name="Smallholder farmers" />
         <meta name="author" content="TA Commodity Producers Co Nig Ltd" />

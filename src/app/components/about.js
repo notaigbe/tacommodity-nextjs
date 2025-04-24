@@ -19,7 +19,7 @@ export function TACommodityAbout() {
   return (
     <section id="about" className="about">
       <div className="container" data-aos="fade-up">
-        <div className="row no-gutters">
+        <div className="row no-gutters border">
           <div className="col-lg-6 video-box">
             <Image
               src="/assets/img/palm-vid.jpg"

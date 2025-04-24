@@ -11,7 +11,7 @@ export default function Services() {
         </div>
 
         <div className="row">
-          <div className="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
+          <div className="col-lg-4 col-md-6 icon-box border p-3 bg-success text-light" data-aos="fade-up" style={{ borderRadius: 20 }}>
             <div className="icon">
               <i className="bi bi-chat-left-dots"></i>
             </div>
@@ -25,9 +25,10 @@ export default function Services() {
             </p>
           </div>
           <div
-            className="col-lg-4 col-md-6 icon-box"
+            className="col-lg-4 col-md-6 icon-box border p-3 bg-success text-light"
             data-aos="fade-up"
             data-aos-delay="100"
+            style={{ borderRadius: 20 }}
           >
             <div className="icon">
               <i className="bi bi-bounding-box"></i>
@@ -41,9 +42,10 @@ export default function Services() {
             </p>
           </div>
           <div
-            className="col-lg-4 col-md-6 icon-box"
+            className="col-lg-4 col-md-6 icon-box border p-3 bg-success text-light"
             data-aos="fade-up"
             data-aos-delay="200"
+            style={{ borderRadius: 20 }}
           >
             <div className="icon">
               <i className="bi bi-globe"></i>

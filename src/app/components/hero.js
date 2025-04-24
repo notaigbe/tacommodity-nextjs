@@ -61,12 +61,12 @@ export default function Hero() {
             </div>
 
             {/* Slide 2 */}
-            <div className="carousel-item" style={{ backgroundImage: "url('/assets/img/slide/maize-farming.jpg')" }}>
+            <div className="carousel-item" style={{ backgroundImage: "url('/assets/img/slide/rspo.jpg')" }}>
               <div className="carousel-container">
                 <div className="carousel-content container">
-                  <h2 className="animate__animated animate__fadeInDown">Providing access to finance</h2>
+                  <h2 className="animate__animated animate__fadeInDown">Export of RSPO Certified Oil Palm</h2>
                   <h1 className="animate__animated animate__fadeInUp text-light">
-                  We export RSPO Certified Oil Palm – Grown with Care, Delivered with Integrity
+                  We export RSPO Certified Oil Palm – Grown with care, delivered with integrity
                   </h1>
                   <Link href="/commodity-and-trade" className="btn-get-started animate__animated animate__fadeInUp scrollto">
                     Learn More <i className="bx bx-cart bx-fade-right bx-flip-horizontal"></i>
