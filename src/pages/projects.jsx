@@ -4,14 +4,14 @@ import "bootstrap-icons/font/bootstrap-icons.css"
 import "boxicons/css/boxicons.css"
 import Aos from "aos";
 import "aos/dist/aos.css"
-import "@/app/globals.css";
-import "@/app/styles/style.css"
-import styles from "@/app/page.module.css";
+import "@/src/app/tacommodity/globals.css";
+import "@/src/app/styles/style.css"
+import styles from "@/src/app/page.module.css";
 import Script from "next/script";
-import Breadcrumbs from "@/app/components/breadcrumbs";
-import Topbar from "@/app/components/topbar";
-import {Header} from "@/app/components/header";
-import {TACommodityFooter} from "@/app/components/footer";
+import Breadcrumbs from "@/src/app/components/breadcrumbs";
+import Topbar from "@/src/app/components/topbar";
+import {Header} from "@/src/app/components/header";
+import {TACommodityFooter} from "@/src/app/components/footer";
 export default function Projects() {
     useEffect(()=>{
       Aos.init({

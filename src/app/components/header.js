@@ -92,11 +92,11 @@ export function Header() {
                   What We Do
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link className="nav-link scrollto" href="/#portfolio">
                   Training
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link className="nav-link scrollto" href="/#team">
                   Team
@@ -109,7 +109,7 @@ export function Header() {
               </li>
               <li className="dropdown">
                 <a href="#">
-                  <span>NGO Support</span>{" "}
+                  <span>Subsidiaries</span>{" "}
                   <i className="bi bi-chevron-down"></i>
                 </a>
                 <ul>
@@ -122,6 +122,11 @@ export function Header() {
                     <Link href="/women-sustainable-group">
                       Women Sustainable Group
                     </Link>
+                    <li>
+                    <a href="/nasus-agro">
+                      Nasus Agro
+                    </a>
+                  </li>
                   </li>
                 </ul>
               </li>

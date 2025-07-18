@@ -3,20 +3,20 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import "boxicons/css/boxicons.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import "@/app/globals.css";
-import "@/app/styles/style.css";
-import styles from "@/app/page.module.css";
+import "@/src/app/tacommodity/globals.css";
+import "@/src/app/styles/style.css";
+import styles from "@/src/app/page.module.css";
 import Script from "next/script";
 import Head from "next/head";
-import { PHAGROPortfolio } from "@/app/components/portfolio";
-import { PHAGROContact } from "@/app/components/contact";
-import { PHAGROTeam } from "@/app/components/team";
-import Topbar from "@/app/components/topbar";
-import { PHAGROHeader } from "@/app/components/header";
-import Breadcrumbs from "@/app/components/breadcrumbs";
-import { PHAGROAbout } from "@/app/components/about";
-import Stats from "@/app/components/stats";
-import { PHAGROFooter } from "@/app/components/footer";
+import { PHAGROPortfolio } from "@/src/app/components/portfolio";
+import { PHAGROContact } from "@/src/app/components/contact";
+import { PHAGROTeam } from "@/src/app/components/team";
+import Topbar from "@/src/app/components/topbar";
+import { PHAGROHeader } from "@/src/app/components/header";
+import Breadcrumbs from "@/src/app/components/breadcrumbs";
+import { PHAGROAbout } from "@/src/app/components/about";
+import Stats from "@/src/app/components/stats";
+import { PHAGROFooter } from "@/src/app/components/footer";
 
 export default function WomenSustainableGroup() {
     useEffect(() => {

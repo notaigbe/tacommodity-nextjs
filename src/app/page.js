@@ -61,7 +61,7 @@ export default function Home() {
         <Services />
         <WhatWeDo />
         <Clients />
-        <TACommodityPortfolio />
+        {/* <TACommodityPortfolio /> */}
         <TACommodityTeam />
         <TACommodityContact />
       </main>
