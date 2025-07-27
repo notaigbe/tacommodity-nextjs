@@ -122,12 +122,17 @@ export function Header() {
                     <Link href="/women-sustainable-group">
                       Women Sustainable Group
                     </Link>
-                    <li>
+                  </li>
+                  <li>
                     <a href="/nasus-agro">
-                      Nasus Agro
+                      Nasus Agro Allied Services
+                    </a></li>
+                  <li>
+                    <a href="/nasus-integration">
+                      Nasus Integration Limited
                     </a>
                   </li>
-                  </li>
+                  
                 </ul>
               </li>
               <li>

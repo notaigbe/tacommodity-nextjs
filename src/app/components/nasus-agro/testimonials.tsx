@@ -13,7 +13,7 @@ export default function Testimonials() {
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
             <h2 className="h2 mb-4">Why Choose Us</h2>
-            <p className="text-xl text-gray-400">At Nasus Agro Allied Services Limited, we pride ourselves on being a leading force in the agricultural industry, committed to providing innovative solutions and exceptional services. With a dedication to sustainable practices and a focus on delivering value to our clients, we strive to contribute to the growth and prosperity of the agricultural sector.</p>
+            <p className="text-xl text-gray-400">A NASUS, Quality Assurance and Health, Safety, and Environment COmpliance are at the heart of our operations.</p>
           </div>
 
           {/* Testimonials */}
@@ -29,7 +29,7 @@ export default function Testimonials() {
                   </svg>
                 </div>
               </div>
-              <blockquote className="text-lg text-gray-400 grow">— We adhere to the highest standards of quality in all our endeavors, ensuring that our clients receive products and services that exceed expectations.</blockquote>
+              <blockquote className="text-lg text-gray-400 grow">— ISO-aligned QA/QC procedure.</blockquote>
               <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
                 <cite className="text-gray-200 not-italic">Quality Assurance</cite> - <a className="text-teal-600 hover:text-gray-200 transition duration-150 ease-in-out" href="#0">UX Board</a>
               </div>

@@ -23,9 +23,9 @@ export default function Hero() {
         <div className="relative pt-32 pb-10 md:pt-40 md:pb-16">
 
           {/* Section header */}
-          <div className="max-w-3xl mx-auto text-center">
-            <h1 className="h1 mb-4" data-aos="fade-up">Nasus Agro Allied Services Limited</h1>
-            <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">Cultivating Growth, Nurturing Sustainability. </p>
+          <div className="relative max-w-3xl mx-auto text-center z-[20]">
+            <h1 className="h1 mb-4 text-center" data-aos="fade-up">Nasus Agro Allied Services</h1>
+            <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">Reliable Engineering, Procurement and Logistics Solutions. </p>
             <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
               {/* <div data-aos="fade-up" data-aos-delay="400">
                 <a className="btn text-white bg-teal-600 hover:bg-teal-700 w-full mb-4 sm:w-auto sm:mb-0" href="#0">Start free trial</a>
@@ -38,8 +38,8 @@ export default function Hero() {
 
           <ModalVideo
             thumb={VideoThumb}
-            thumbWidth={1024}
-            thumbHeight={576}
+            thumbWidth={640}
+            thumbHeight={480}
             thumbAlt="Modal video thumbnail"
             video="/assets/nasus-agro/videos/video.mp4"
             videoWidth={1920}

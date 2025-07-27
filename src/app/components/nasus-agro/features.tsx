@@ -7,7 +7,8 @@ export default function Features() {
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
             <h2 className="h2 mb-4">About Us</h2>
-            <p className="text-xl text-gray-400">Nasus Agro Allied Services Limited is a dynamic and forward-thinking company dedicated to revolutionizing the agricultural landscape. Founded on the principles of integrity, quality, and innovation, we specialize in a range of services that encompass the entire agricultural value chain.</p>
+            <p className="text-xl text-gray-400">We are a multidisciplinary service provider focused on engineering design, procurement services, logistics, construction, and HSE-Compliant project execution. 
+              Our seasoned professionals with decades of experience in executing critical infrastructure, oilfield support, and community development projects across Nigeria.</p>
           </div>
 
           {/* Items */}
@@ -59,7 +60,7 @@ export default function Features() {
                 </g>
               </svg>
               <h4 className="h4 mb-2">Vision</h4>
-              <p className="text-lg text-gray-400 text-center">To be a trailblazer in the agro-allied industry, recognized for excellence, sustainability, and transformative impact.</p>
+              <p className="text-lg text-gray-400 text-center">To be trusted leader in engineering and logistics, driving infrastructure growth and innovation across Nigeria and beyond.</p>
             </div>
 
             {/* 5th item */}
@@ -72,7 +73,7 @@ export default function Features() {
                 </g>
               </svg>
               <h4 className="h4 mb-2">Mission</h4>
-              <p className="text-lg text-gray-400 text-center">To contribute to the growth and prosperity of the agricultural sector.</p>
+              <p className="text-lg text-gray-400 text-center">To deliver high-quality, ethical, and responsive services in engineering, procurement, and logistics while fostering employee growth, client satisfaction, and national development.</p>
             </div>
 
             {/* 6th item */}
@@ -85,8 +86,8 @@ export default function Features() {
                   <path className="stroke-current text-teal-100" d="M8.86 1.18C3.8 1.988 0 5.6 0 10c0 5 4.9 9 11 9a10.55 10.55 0 003.1-.4L20 21l-.6-5.2a9.125 9.125 0 001.991-2.948" />
                 </g>
               </svg>
-              <h4 className="h4 mb-2">Core Values</h4>
-              <p className="text-lg text-gray-400 text-center">Dedication to sustainable practices and a focus on delivering value to our clients.</p>
+              {/* <h4 className="h4 mb-2">Core Values</h4>
+              <p className="text-lg text-gray-400 text-center">Dedication to sustainable practices and a focus on delivering value to our clients.</p> */}
             </div>
 
           </div>

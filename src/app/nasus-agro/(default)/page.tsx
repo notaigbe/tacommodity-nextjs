@@ -26,8 +26,10 @@ export default function Home() {
         </div>
       <Hero />
       <Features />
-      <Zigzag />
+      <Zigzag />     
       <Testimonials />
+      
+      
       {/* <Newsletter /> */}
     </>
   )
