@@ -75,7 +75,28 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      
+      <head>
+      <meta charSet="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        
+        <title>NASUS Integration Limited | Engineering, Procurement & Logistics Experts in Nigeria</title>
+        <meta content="NASUS Integration Limited helps businesses in Nigeria optimize their operations through expert engineering, procurement, and logistics solutions." name="description" />
+        <meta content="engineering, procurement, logistics, project management, supply chain, infrastructure, oil and gas, Nigeria" name="keywords" />
+        <meta name="author" content="NASUS Integration Limited" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="NASUS Integration Limited - Engineering, Procurement & Logistics Experts in Nigeria" />
+        <meta property="og:description" content="Helping businesses in Nigeria optimize their operations through expert engineering, procurement, and logistics solutions." />
+        <meta property="og:image" content="https://tacommodity-nextjs.vercel.app/assets/nasus-integration/img/logo.png" />
+        <meta property="og:url" content="https://tacommodity-nextjs.vercel.app/nasus-integration" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="NASUS Integration Limited" />
+        <meta name="twitter:description" content="Connecting businesses in Nigeria with expert engineering, procurement, and logistics solutions." />
+        <meta name="twitter:image" content="https://tacommodity-nextjs.vercel.app/assets/nasus-integration/img/logo.png" />
+        <link href="/favicon.ico" rel="icon" />
+        <link href="https://tacommodity-nextjs.vercel.app/assets/nasus-integration/img/nasus-integration-logo.png" rel="apple-touch-icon" />
+
+
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
       </body>

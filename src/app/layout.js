@@ -61,7 +61,7 @@ export default function RootLayout({ children }) {
         <meta name="twitter:title" content="TA Commodity Producers Co Nig Ltd" />
         <meta name="twitter:description" content="Connecting smallholder farmers with buyers in global markets for fair trade and sustainable growth." />
         <meta name="twitter:image" content="https://tacommodity-nextjs.vercel.app/assets/img/ta_commodity_logo.png" />
-        <link href="https://tacommodity-nextjs.vercel.app/assets/img/ta_commodity_logo.png" rel="icon" />
+        <link href="/favicon.ico" rel="icon" />
         <link href="https://tacommodity-nextjs.vercel.app/assets/img/ta_logo.png" rel="apple-touch-icon" />
 
 

@@ -47,12 +47,12 @@ export default function RootLayout({
         <meta name="robots" content="index, follow" />
         <meta property="og:title" content="Nasus Agro Allied Limited - Connecting Smallholder Farmers to Markets" />
         <meta property="og:description" content="Helping smallholder farmers in Nigeria access global markets by trading high-quality agricultural commodities." />
-        <meta property="og:image" content="https://nasusagro.vercel.app/assets/img/ta_commodity_logo.png" />
+        <meta property="og:image" content="https://nasusagro.vercel.app/assets/nasus-agro/images/logo.png" />
         <meta property="og:url" content="https://www.tacommodity.com/nasus-agro" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Nasus Agro Allied Limited" />
         <meta name="twitter:description" content="Connecting smallholder farmers with buyers in global markets for fair trade and sustainable growth." />
-        <meta name="twitter:image" content="https://nasusagro.vercel.app/assets/img/ta_commodity_logo.png" />
+        <meta name="twitter:image" content="https://nasusagro.vercel.app/assets/nasus-agro/images/logo.png" />
         <link href="/favicon.ico" rel="icon" />
         {/* <link href="https://nasusagro.vercel.app/assets/img/ta_logo.png" rel="apple-touch-icon" /> */}
 
