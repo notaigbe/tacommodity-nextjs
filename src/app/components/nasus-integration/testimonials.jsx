@@ -1,6 +1,8 @@
 'use client';
 import { Swiper, SwiperSlide } from 'swiper/react';
 // import { Pagination } from 'swiper';
+import { Autoplay, Pagination } from 'swiper/modules';
+
 import 'swiper/css';
 import 'swiper/css/pagination';
 import Image from 'next/image';
@@ -19,13 +21,19 @@ function Testimonials() {
         </div>
 
         <Swiper
-        //   modules={[Pagination, Autoplay]}
-          spaceBetween={40}
-          slidesPerView={3}
+          modules={[Pagination, Autoplay]}
+          // spaceBetween={40}
+          breakpoints={{
+            0: { slidesPerView: 1, spaceBetween: 20 },
+            640: { slidesPerView: 1.2, spaceBetween: 20 },
+            768: { slidesPerView: 2, spaceBetween: 30 },
+            1024: { slidesPerView: 3, spaceBetween: 40 },
+          }}
           pagination={{ clickable: true }}
           autoplay={{ delay: 5000, disableOnInteraction: false }}
           className="testimonials-slider"
         >
+
           <SwiperSlide>
             <div className="testimonial-item">
               <p>
@@ -41,7 +49,9 @@ function Testimonials() {
                 alt=""
                 width={100}
                 height={100}
+                loading="lazy"
               />
+
               <h3>Saul Goodman</h3>
               <h4>Ceo &amp; Founder</h4>
             </div>

@@ -85,7 +85,7 @@ function Portfolio () {
                         <div key={index} className={`col-lg-4 col-md-6 portfolio-item filter-${project.category}`}>
                             <div className="portfolio-wrap">
                                 {project.project_image_1 ? (
-                                    <img src={project.project_image_1.jpg} className="img-fluid" alt={project.project_name} />
+                                    <img src={project.project_image_1.jpg} className="img-fluid w-100" alt={project.project_name} />
                                 ) : (
                                     <img src="/assets/nasus-integration/img/portfolio/drainage.jpg" className="img-fluid" alt={project.project_name} />
                                 )}

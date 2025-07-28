@@ -37,7 +37,7 @@ export const metadata = {
   },
   openGraph: {
     type: 'website',
-    url: 'https://tacommodity.vercel.app/nasus-integration',
+    url: 'https://tacommodity-nextjs.vercel.app/nasus-integration',
     title: 'NASUS Integration Limited',
     description:
       'Expert solutions in engineering, procurement, and logistics for infrastructure and oil & gas sectors in Nigeria.',
@@ -45,7 +45,7 @@ export const metadata = {
     locale: 'en_NG',
     images: [
       {
-        url: 'https://tacommodity.vercel.app/assets/nasus-integration/img/nasus-integration logo.jpg', // Replace with actual OG image
+        url: 'https://tacommodity-nextjs.vercel.app/assets/nasus-integration/img/nasus-integration logo.jpg', // Replace with actual OG image
         width: 1200,
         height: 630,
         alt: 'NASUS Integration Limited',
@@ -57,9 +57,9 @@ export const metadata = {
     title: 'NASUS Integration Limited',
     description: 'Engineering. Procurement. Logistics. Project Excellence.',
     site: '', // Replace if you have a Twitter handle
-    images: ['https://tacommodity.vercel.app/assets/nasus-integration/img/nasus-integration logo.jpg'] // Same as above
+    images: ['https://tacommodity-nextjs.vercel.app/assets/nasus-integration/img/nasus-integration logo.jpg'] // Same as above
   },
-  authors: [{ name: 'NASUS Integration Limited', url: 'https://tacommodity.vercel.app/nasus-integration' }],
+  authors: [{ name: 'NASUS Integration Limited', url: 'https://tacommodity-nextjs.vercel.app/nasus-integration' }],
   creator: 'Gnotable Technologies',
   robots: {
     index: true,
@@ -67,7 +67,7 @@ export const metadata = {
     nocache: false,
   },
   alternates: {
-    canonical: 'https://tacommodity.vercel.app/nasus-integration',
+    canonical: 'https://tacommodity-nextjs.vercel.app/nasus-integration',
   }
 }
 

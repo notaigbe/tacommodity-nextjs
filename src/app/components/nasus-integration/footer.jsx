@@ -12,7 +12,7 @@ export default function Footer(){
           <div className="col-lg-4 col-md-6">
             <div className="footer-info">
               {/* <!--h3>Troika</h3--> */}
-              <a href="/"><img src="assets/nasus-integration/img/logo.png" alt="" className="img-fluid"/></a>
+              <a href="/nasus-integration"><img src="assets/nasus-integration/img/logo.png" alt="" className="img-fluid"/></a>
               <hr/>
               <p className="pb-3"><em>Contact details.</em></p>
               <p>
