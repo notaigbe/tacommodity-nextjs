@@ -12,7 +12,7 @@ function Team() {
 
                 <div className="row">
 
-                    <div className="col-lg-4 col-md-6">
+                    {/* <div className="col-lg-4 col-md-6">
                         <div className="member" data-aos="fade-up">
                             <div className="pic">
                                 <Image 
@@ -34,7 +34,7 @@ function Team() {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
 
                     <div className="col-lg-4 col-md-6">
                         <div className="member" data-aos="fade-up" data-aos-delay="150">
@@ -48,8 +48,8 @@ function Team() {
                                 />
                             </div>
                             <div className="member-info">
-                                <h4><a href="tel:+2348033478076">+234 803 347 8076</a></h4>
-                                <span><a href="mailto:enquiries@troikainvestmentng.com">enquiries@troikainvestmentng.com</a></span>
+                                <h4><a href="tel:+2348055068582">+234 805 506 8582</a></h4>
+                                <span><a href="mailto:nasus582002@yahoo.com">nasus582002@yahoo.com</a></span>
                                 <div className="social">
                                     <a href="https://www.twitter.com/"><i className="bi bi-twitter"></i></a>
                                     <a href="https://www.facebook.com/"><i className="bi bi-facebook"></i></a>

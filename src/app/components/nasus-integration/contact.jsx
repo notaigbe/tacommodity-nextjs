@@ -13,8 +13,8 @@ export default function Contact() {
                         <div className="info-box mb-4">
                             <i className="bx bx-map"></i>
                             <h3>Our Address</h3>
-                            <p>14, Tony Avenue behind Logos Ministry, Off NTA Road,
-                                Mgbuoba Port Harcourt, Rivers State</p>
+                            <p>No. 14, Farm Road, Off Ada George Road,
+                                Port Harcourt, Rivers State</p>
                         </div>
                     </div>
 
@@ -22,7 +22,7 @@ export default function Contact() {
                         <div className="info-box mb-4">
                             <i className="bx bx-envelope"></i>
                             <h3>Email Us</h3>
-                            <p><a href="mailto:info@troikainvestmentng.com">info@troikainvestmentng.com</a></p>
+                            <p><a href="mailto:nasus582002@yahoo.com">nasus582002@yahoo.com</a></p>
                         </div>
                     </div>
 
@@ -30,13 +30,13 @@ export default function Contact() {
                         <div className="info-box mb-4">
                             <i className="bx bx-phone-call"></i>
                             <h3>Call Us</h3>
-                            <p><a href="tel:+2348032679974">+234 803 267 9974</a></p>
+                            <p><a href="tel:+2348055068582">+234 805 506 8582</a></p>
                         </div>
                     </div>
                 </div>
 
                 <div className="row">
-                    <div className="col-lg-6">
+                    {/* <div className="col-lg-6">
                         <iframe
                             className="mb-4 mb-lg-0"
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.4372675008913!2d6.963283114450517!3d4.866166296466636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069d1d2ebfaa1b3%3A0xcba82aceaacd43d!2sMgbouba%2FNta+Road%2C+Port+Harcourt!5e0!3m2!1sen!2sng!4v1478196797801"
@@ -44,9 +44,9 @@ export default function Contact() {
                             style={{ border: 0, width: "100%", height: "384px" }}
                             allowFullScreen
                         ></iframe>
-                    </div>
+                    </div> */}
 
-                    <div className="col-lg-6">
+                    <div className="col-lg-12">
                         <form action="/#contact" method="post" role="form" className="php-email-form" id="contactform">
                             {/* {% csrf_token %} */}
                             <div className="row">

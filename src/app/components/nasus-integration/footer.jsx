@@ -12,14 +12,14 @@ export default function Footer(){
           <div className="col-lg-4 col-md-6">
             <div className="footer-info">
               {/* <!--h3>Troika</h3--> */}
-              {/* <a href="/"><Image src="assets/nasus-integration/img/logo.png" alt="" className="img-fluid"/></a> */}
+              <a href="/"><img src="assets/nasus-integration/img/logo.png" alt="" className="img-fluid"/></a>
               <hr/>
               <p className="pb-3"><em>Contact details.</em></p>
               <p>
-                No. 14, Farm Road, Off Ada Geoarge Road  <br/>
+                No. 14, Farm Road, Off Ada George Road  <br/>
                 Port Harcourt, Rivers State<br/><br/>
-                <strong>Phone:</strong> <a href="tel:+2348032679974">+234 805 506 8582</a><br/>
-                <strong>Email:</strong> <a href="mailto:info@troikainvestmentng.com">nasus582002@yahoo.com</a><br/>
+                <strong>Phone:</strong> <a href="tel:+2348055068582">+234 805 506 8582</a><br/>
+                <strong>Email:</strong> <a href="mailto:nasus582002@yahoo.com">nasus582002@yahoo.com</a><br/>
               </p>
               <div className="social-links mt-3">
                 <a href="#" className="twitter"><i className="bx bxl-twitter"></i></a>

@@ -28,17 +28,25 @@ export default function Header() {
       <div className="container d-flex align-items-center justify-content-between">
         <div className="logo">
           <a href="/">
-            <Image
+          {(isScrolled) ?
+            (<Image
+              src="/assets/nasus-integration/img/logo.png"
+              alt=""
+              className="img-fluid"
+              height={500}
+              width={500}
+              style={{ width: "100%", height: "100%" }}
+            />):(<Image
               src="/assets/nasus-integration/img/logo-white.png"
               alt=""
               className="img-fluid"
               height={500}
               width={500}
               style={{ width: "100%", height: "100%" }}
-            />
+            />)}
+
           </a>
         </div>
-
         <nav id="navbar" className="navbar">
           <ul>
             <li>

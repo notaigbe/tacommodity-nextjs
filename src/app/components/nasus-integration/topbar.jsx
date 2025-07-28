@@ -7,7 +7,7 @@ export default function TopBar() {
                 <div className="contact-info d-flex align-items-center">
                     <i className="bi bi-clock-fill"></i>Mon - Fri 8am - 5pm
                     <i className="bi bi-phone-fill phone-icon"></i> 
-                    <a href="tel:+2348032679974">+234 805 506 8582</a>
+                    <a href="tel:+2348055068582">+234 805 506 8582</a>
                 </div>
                 <div className="social-links d-none d-md-block">
                     <a href="https://www.twitter.com/" className="twitter"><i className="bi bi-twitter-x"></i></a>
