@@ -14,7 +14,7 @@ function About() {
                 Incorporated in 2001, NASUS Integration Limited is a multidisciplinary service provider in engineering, logistics,
           procurement, and HSE-compliant project execution. We are driven by excellence and a commitment to national development.</p>
               <p>Our team includes seasoned professionals with decades of experience in executing critical infrastructure, oilfield support, and community development projects across Nigeria.</p>
-              <p>We achieve our success through successfully integrating with our clients. We understand clients' concern about how consultants can be disruptive. The fear of consultants coming in and destroying the workflow of employees. Our clients face no such issues.
+              <p>NASUS is not just a service provider—we are an extension of your organization. We work side-by-side with your team, leveraging your vision, goals, and context to implement solutions that make a measurable difference.
               </p>
               {/* <a href="#" className="about-btn">About Us <i className="bx bx-chevron-right"></i></a> */}
             </div>

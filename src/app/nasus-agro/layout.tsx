@@ -29,7 +29,7 @@ export const metadata = {
   },
 }
 
-export default function RootLayout({
+export default function NasusAgroLayout({
   children,
 }: {
   children: React.ReactNode

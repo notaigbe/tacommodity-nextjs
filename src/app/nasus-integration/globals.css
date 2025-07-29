@@ -389,7 +389,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(rgba(23, 32, 36, 0.5), rgba(19, 27, 31, 0.2)), url("/assets/nasus-integration/img/slide04-2.jpg") top center;
+  background: linear-gradient(rgba(23, 32, 36, 0.979), rgba(19, 27, 31, 0.281)), url("/assets/nasus-integration/img/slide04-2.jpg") top center;
   background-size: cover;
   position: relative;
   margin-bottom: -90px;
@@ -474,7 +474,7 @@ section {
 }
 
 .section-bg {
-  background-color: #f4f9fc;
+  background-color: #0a0a0a0a;
 }
 
 .section-title {
@@ -777,7 +777,7 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(23, 32, 36, 0.5), rgba(19, 27, 31, 0.2)), url("/assets/nasus-integration/img/cta-bg.jpg") fixed center center;
+  background: linear-gradient(rgba(23, 32, 36, 0.986), rgba(19, 27, 31, 0.247)), url("/assets/nasus-integration/img/cta-bg.jpg") fixed center center;
   background-size: cover;
   padding: 60px 0;
 }

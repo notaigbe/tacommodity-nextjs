@@ -64,9 +64,11 @@ function Portfolio () {
 
                 <div className="section-title" data-aos="fade-in" data-aos-delay="100">
                     <h2>Our Projects</h2>
-                    <p>Our experience and expertise comes to bare in our numerous projects.</p>
-                </div>
+                    <p>At NASUS Integration Limited, we believe that project success is rooted in structured planning, transparent communication, and rigorous quality assurance.</p><p>
 
+We adopt a tailor-made project execution system based on work breakdown structures (WBS), detailed scheduling, and cost control. Each project is supported by a robust reporting system and real-time data tracking to ensure transparency and accountability at every stage.</p>
+                </div>
+                
                 <div className="row" data-aos="fade-in">
                     <div className="col-lg-12 d-flex justify-content-center">
                         <ul id="portfolio-flters">

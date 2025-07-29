@@ -7,7 +7,9 @@ function Team() {
 
                 <div className="section-title" data-aos="fade-in" data-aos-delay="100">
                     <h2>Our Team</h2>
-                    <p>Meet our team of professionals who ensure you get quality service always.</p>
+                    <p>
+          Our structure is designed to <strong>ensure agility, quality, and accountability</strong> across all projects and service areas. Each department is led by experienced professionals with clear roles and responsibilities.
+        </p>
                 </div>
 
                 <div className="row">
@@ -61,7 +63,7 @@ function Team() {
                     </div>
 
                 </div>
-
+                        
             </div>
         </section>
     );
