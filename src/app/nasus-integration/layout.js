@@ -75,7 +75,7 @@ export const metadata = {
 export default function NasusIntegrationLayout({ children }) {
   return (
     <html lang="en">
-      {/* <head>
+      <head>
       <meta charSet="utf-8" />
         <meta content="width=device-width, initial-scale=1.0" name="viewport" />
         
@@ -96,7 +96,7 @@ export default function NasusIntegrationLayout({ children }) {
         <link href="https://tacommodity-nextjs.vercel.app/assets/nasus-integration/img/nasus-integration-logo.png" rel="apple-touch-icon" />
 
 
-      </head> */}
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
       </body>

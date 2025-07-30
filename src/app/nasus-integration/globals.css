@@ -308,7 +308,7 @@ h6 {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(43, 111, 142, 0.9);
+  background: rgba(61, 66, 68, 0.9);
   transition: 0.3s;
 }
 
@@ -1464,3 +1464,5 @@ section {
 }
 * html .clearfix             { zoom: 1; } /* IE6 */
 *:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+
