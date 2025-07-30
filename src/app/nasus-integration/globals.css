@@ -677,7 +677,7 @@ section {
 }
 
 .services .icon-box:hover::before {
-  background: #0c1110;
+  background: linear-gradient(180deg, #2f5049 0%, #011111 100%);
   top: 0;
   border-radius: 0px;
 }
@@ -910,6 +910,18 @@ section {
 .portfolio .portfolio-wrap:hover .portfolio-links {
   opacity: 1;
   bottom: 0;
+}
+
+/* .portfolio #portfolio-flters li {
+  cursor: pointer;
+  margin: 0 10px;
+  display: inline-block;
+} */
+
+.portfolio #portfolio-flters .filter-active {
+  color: #F38428;
+  font-weight: bold;
+  border-bottom: 2px solid #F38428;
 }
 
 /*--------------------------------------------------------------
@@ -1300,7 +1312,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #181e20;
+  background: linear-gradient(180deg, #383d3c 0%, #010c0c 100%);
   padding: 0 0 30px 0;
   color: #fff;
   font-size: 14px;
@@ -1315,7 +1327,7 @@ section {
   margin-bottom: 15px;
   background: white;
   color: #434f55;
-  border-top: 4px solid #0c1110;
+  border-top: 4px solid #F38428;
   text-align: center;
   padding: 30px 20px;
 }
