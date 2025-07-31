@@ -1,4 +1,4 @@
-'use client';
+
 import React from 'react';
 
 export default function AboutPage() {
@@ -76,7 +76,7 @@ export default function AboutPage() {
                   <p className="text-muted fs-5 lh-relaxed">
                     Founded in 2001, NASUS Integration Limited is a multidisciplinary business solutions provider offering comprehensive services across industries including oil & gas, construction, and infrastructure.
                   </p>
-                  <p className="text-muted">
+                  <p className="text-muted fs-5 lh-relaxed">
                     Based in Port Harcourt, we deliver tailored solutions that align with our clients' operational goals, driven by seasoned professionals with decades of combined experience.
                   </p>
                 </div>
@@ -462,25 +462,6 @@ export default function AboutPage() {
           </section>
         </div>
       </main>
-
-      <style jsx>{`
-        .hover-lift {
-          transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .hover-lift:hover {
-          transform: translateY(-5px);
-          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
-        }
-        .lh-relaxed {
-          line-height: 1.7;
-        }
-        .min-vh-50 {
-          min-height: 50vh;
-        }
-        .backdrop-blur {
-          backdrop-filter: blur(10px);
-        }
-      `}</style>
     </>
   );
 }
