@@ -3,11 +3,11 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import TopBar from "./topbar";
 
-export default function Header() {
+export default function Header({landing}) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [showMobileNav, setShowMobileNav] = useState(false);
   const [activeSection, setActiveSection] = useState("hero");
-
+  console.log(landing);
   useEffect(() => {
     const sections = document.querySelectorAll("section[id]");
     const observer = new IntersectionObserver(
@@ -27,11 +27,12 @@ export default function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
+      if (landing) {
       if (window.scrollY > 100) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
-      }
+      }}
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -44,7 +45,9 @@ export default function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 100);
+
+        setIsScrolled(window.scrollY > 100);
+      
     };
 
     const handleResize = () => {
@@ -64,13 +67,17 @@ export default function Header() {
 
   return (
     <header
-      id="header"
-      className={`fixed-top ${
-        isScrolled ? "header-scrolled" : "header-transparent"
-      }`}
-    >
-      <TopBar />
-      <div className="container d-flex align-items-center justify-content-between">
+  id="header"
+  className={`fixed-top ${
+    landing
+      ? `h-120 ${isScrolled ? "header-scrolled" : "header-transparent"}`
+      : ""
+  }`}
+  style={landing ? { height: '120px' } : {background: 'rgba(13, 24, 22, 1)' }}
+>
+
+      {landing && <TopBar />}
+      <div className="container d-flex align-items-center justify-content-between" style={!landing ? { marginTop: '-30px' }:{marginTop: '-20px'}}>
         <div className="logo">
           <a href="/">
             <Image
@@ -98,7 +105,7 @@ export default function Header() {
                 className={`nav-link scrollto ${
                   activeSection === "hero" ? "active" : ""
                 }`}
-                href="#hero"
+                href="/nasus-integration#hero"
                 onClick={() => {setActiveSection("hero"), setShowMobileNav(false)}}
               >
                 Home
@@ -109,7 +116,7 @@ export default function Header() {
                 className={`nav-link scrollto ${
                   activeSection === "about" ? "active" : ""
                 }`}
-                href="#about"
+                href="/nasus-integration#about"
                 onClick={() => {setActiveSection("about"), setShowMobileNav(false)}}
               >
                 About Us
@@ -121,7 +128,7 @@ export default function Header() {
                 className={`nav-link scrollto ${
                   activeSection === "services" ? "active" : ""
                 }`}
-                href="#services"
+                href="/nasus-integration#services"
                 onClick={() => {setActiveSection("services"), setShowMobileNav(false)}}
               >
                 Services
@@ -132,7 +139,7 @@ export default function Header() {
                 className={`nav-link scrollto ${
                   activeSection === "portfolio" ? "active" : ""
                 }`}
-                href="#portfolio"
+                href="/nasus-integration#portfolio"
                 onClick={() => {setActiveSection("portfolio"), setShowMobileNav(false)}}
               >
                 Projects
@@ -143,7 +150,7 @@ export default function Header() {
                 className={`nav-link scrollto ${
                   activeSection === "team" ? "active" : ""
                 }`}
-                href="#team"
+                href="/nasus-integration#team"
                 onClick={() => {setActiveSection("team"), setShowMobileNav(false)}}
               >
                 Team
@@ -154,7 +161,7 @@ export default function Header() {
                 className={`nav-link scrollto ${
                   activeSection === "contact" ? "active" : ""
                 }`}
-                href="#contact"
+                href="/nasus-integration#contact"
                 onClick={() => {setActiveSection("contact"), setShowMobileNav(false)}}
               >
                 Contact
@@ -168,7 +175,7 @@ export default function Header() {
             <li className="p-4">
               <a
                 className="btn btn-warning p-2"
-                href="#cta"
+                href="/nasus-integration#cta"
                 style={{ background: "#f38428" }}
                 onClick={() => {setActiveSection("cta"), setShowMobileNav(false)}}
               >

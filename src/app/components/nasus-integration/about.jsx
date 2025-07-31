@@ -16,7 +16,7 @@ function About() {
               <p>Our team includes seasoned professionals with decades of experience in executing critical infrastructure, oilfield support, and community development projects across Nigeria.</p>
               <p>NASUS is not just a service provider—we are an extension of your organization. We work side-by-side with your team, leveraging your vision, goals, and context to implement solutions that make a measurable difference.
               </p>
-              {/* <a href="#" className="about-btn">About Us <i className="bx bx-chevron-right"></i></a> */}
+              <a href="/nasus-integration/about" className="about-btn" style={{ backgroundColor: "#F38428"}}>Learn More <i className="bx bx-chevron-right"></i></a>
             </div>
           </div>
           <div className="col-xl-7 d-flex align-items-stretch">

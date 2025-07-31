@@ -17,7 +17,7 @@ import Footer from '@/src/app/components/nasus-integration/footer';
 export default function Home() {
   return (
     <>
-      <Header />
+      <Header landing={true} />
       <Hero />
       <main id="main" className='main'>
         <About />
