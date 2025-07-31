@@ -5,14 +5,16 @@ import Counts from '@/src/app/components/nasus-integration/counts';
 import Cta from '@/src/app/components/nasus-integration/cta';
 import Footer from '@/src/app/components/nasus-integration/footer';
 import Breadcrumbs from '@/src/app/components/nasus-integration/breadcrumbs';
-// import './style.css'
-// import '@/app/page.css'
+import dynamic from 'next/dynamic';
+
+
 
 
 export default function Home() {
+	const Header = dynamic(() => import('@/components/nasus-integration/header'), { ssr: false });
   return (
     <>
-      {/* <Header landing={false} /> */}
+      <Header landing={false} />
         <Breadcrumbs page="About"/>
         <AboutPage /> 
   
