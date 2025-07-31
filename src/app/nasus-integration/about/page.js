@@ -12,7 +12,7 @@ import Breadcrumbs from '@/src/app/components/nasus-integration/breadcrumbs';
 export default function Home() {
   return (
     <>
-      <Header landing={false} />
+      {/* <Header landing={false} /> */}
         <Breadcrumbs page="About"/>
         <AboutPage /> 
   
