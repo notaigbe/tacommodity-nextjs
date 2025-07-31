@@ -1,7 +1,8 @@
 'use client';
-'use client';
 import React, { useEffect, useRef, useState } from 'react';
 import Isotope from 'isotope-layout';
+import Image from 'next/image';
+import Link from 'next/link';
 
 function Portfolio() {
   const isotope = useRef();
@@ -114,23 +115,26 @@ function Portfolio() {
           {portfolio.map((project) => (
             <div key={project.pk} className={`col-lg-4 col-md-6 portfolio-item ${project.category}`}>
               <div className="portfolio-wrap">
-                <img
+                <Image
                   src={project.project_image_1?.jpg || '/assets/nasus-integration/img/portfolio/drainage.jpg'}
                   className="img-fluid w-100"
                   alt={project.project_name}
+                  width={400}
+                  height={200}
+                  style={{ width: '100%', height: '100%'}}
                 />
                 <div className="portfolio-links">
-                  <a
+                  <Link
                     href={project.project_image_1?.jpg}
                     data-gallery="portfolioGallery"
                     className="portfolio-lightbox"
                     title={project.project_name}
                   >
                     <i className="bx bx-plus"></i>
-                  </a>
-                  <a href={`/portfolio/${project.pk}`} title="More Details">
+                  </Link>
+                  <Link href={`/portfolio/${project.pk}`} title="More Details">
                     <i className="bx bx-link"></i>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

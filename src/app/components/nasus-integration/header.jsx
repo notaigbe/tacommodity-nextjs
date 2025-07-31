@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import TopBar from "./topbar";
+import Link from 'next/link';
 
 export default function Header({ landing = true }) {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -89,7 +90,7 @@ export default function Header({ landing = true }) {
         }
       >
         <div className="logo">
-          <a href="/">
+          <Link href="/">
             <Image
               src={
                 isScrolled
@@ -102,7 +103,7 @@ export default function Header({ landing = true }) {
               width={500}
               style={{ width: "100%", height: "100%" }}
             />
-          </a>
+          </Link>
         </div>
 
         <nav
@@ -111,7 +112,7 @@ export default function Header({ landing = true }) {
         >
           <ul>
             <li className="px-2">
-              <a
+              <Link
                 className={`nav-link scrollto ${
                   activeSection === "hero" ? "active" : ""
                 }`}
@@ -119,10 +120,10 @@ export default function Header({ landing = true }) {
                 onClick={() => handleNavClick("hero")}
               >
                 Home
-              </a>
+              </Link>
             </li>
             <li className="px-2">
-              <a
+              <Link
                 className={`nav-link scrollto ${
                   activeSection === "about" ? "active" : ""
                 }`}
@@ -130,10 +131,10 @@ export default function Header({ landing = true }) {
                 onClick={() => handleNavClick("about")}
               >
                 About Us
-              </a>
+              </Link>
             </li>
             <li className="px-2">
-              <a
+              <Link
                 className={`nav-link scrollto ${
                   activeSection === "services" ? "active" : ""
                 }`}
@@ -141,10 +142,10 @@ export default function Header({ landing = true }) {
                 onClick={() => handleNavClick("services")}
               >
                 Services
-              </a>
+              </Link>
             </li>
             <li className="px-2">
-              <a
+              <Link
                 className={`nav-link scrollto ${
                   activeSection === "portfolio" ? "active" : ""
                 }`}
@@ -152,10 +153,10 @@ export default function Header({ landing = true }) {
                 onClick={() => handleNavClick("portfolio")}
               >
                 Projects
-              </a>
+              </Link>
             </li>
             <li className="px-2">
-              <a
+              <Link
                 className={`nav-link scrollto ${
                   activeSection === "team" ? "active" : ""
                 }`}
@@ -163,10 +164,10 @@ export default function Header({ landing = true }) {
                 onClick={() => handleNavClick("team")}
               >
                 Team
-              </a>
+              </Link>
             </li>
             <li className="px-2">
-              <a
+              <Link
                 className={`nav-link scrollto ${
                   activeSection === "contact" ? "active" : ""
                 }`}
@@ -174,7 +175,7 @@ export default function Header({ landing = true }) {
                 onClick={() => handleNavClick("contact")}
               >
                 Contact
-              </a>
+              </Link>
             </li>
             <li className="px-2">
               <a className="nav-link btn btn-outline-warning" href="/">
@@ -182,14 +183,14 @@ export default function Header({ landing = true }) {
               </a>
             </li>
             <li className="p-4">
-              <a
+              <Link
                 className="btn btn-warning p-2"
                 href="/nasus-integration#cta"
                 style={{ background: "#f38428" }}
                 onClick={() => handleNavClick("cta")}
               >
                 Get Started
-              </a>
+              </Link>
             </li>
           </ul>
 
