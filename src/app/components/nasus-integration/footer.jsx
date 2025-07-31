@@ -12,7 +12,7 @@ export default function Footer(){
           <div className="col-lg-4 col-md-6">
             <div className="footer-info">
               {/* <!--h3>Troika</h3--> */}
-              <a href="/nasus-integration"><img src="assets/nasus-integration/img/logo.png" alt="" className="img-fluid"/></a>
+              <a href="/nasus-integration"><Image src="/assets/nasus-integration/img/logo.png" alt="" className="img-fluid" width={300} height={100} style={{ width: "100%", height: "100%" }}/></a>
               <hr/>
               <p className="pb-3"><em>Contact details.</em></p>
               <p>
@@ -34,11 +34,11 @@ export default function Footer(){
           <div className="col-lg-2 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i className="bx bx-chevron-right"></i> <a href="#home">Home</a></li>
-              <li><i className="bx bx-chevron-right"></i> <a href="#about">About us</a></li>
-              <li><i className="bx bx-chevron-right"></i> <a href="#services">Services</a></li>
-              <li><i className="bx bx-chevron-right"></i> <a href="#projects">Projects</a></li>
-              <li><i className="bx bx-chevron-right"></i> <a href="#team">Team</a></li>
+              <li><i className="bx bx-chevron-right"></i> <a href="/nasus-integration#home">Home</a></li>
+              <li><i className="bx bx-chevron-right"></i> <a href="/nasus-integration#about">About us</a></li>
+              <li><i className="bx bx-chevron-right"></i> <a href="/nasus-integration#services">Services</a></li>
+              <li><i className="bx bx-chevron-right"></i> <a href="/nasus-integration#projects">Projects</a></li>
+              <li><i className="bx bx-chevron-right"></i> <a href="/nasus-integration#team">Team</a></li>
             </ul>
           </div>
 
