@@ -1,5 +1,7 @@
+
+'use client';
 import React from 'react';
-import Header from '@/src/app/components/nasus-integration/header';
+// import Header from '@/src/app/components/nasus-integration/header';
 import AboutPage from '@/src/app/components/nasus-integration/aboutpage';
 import Counts from '@/src/app/components/nasus-integration/counts';
 import Cta from '@/src/app/components/nasus-integration/cta';
@@ -11,7 +13,7 @@ import dynamic from 'next/dynamic';
 
 
 export default function Home() {
-	const Header = dynamic(() => import('@/components/nasus-integration/header'), { ssr: false });
+	const Header = dynamic(() => import('@/src/app/components/nasus-integration/header'), { ssr: false });
   return (
     <>
       <Header landing={false} />
