@@ -3,13 +3,18 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import TopBar from "./topbar";
 
-export default function Header({landing}) {
+export default function Header({ landing = true }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [showMobileNav, setShowMobileNav] = useState(false);
   const [activeSection, setActiveSection] = useState("hero");
-  // console.log(landing);
+
   useEffect(() => {
+    // Only run on client side
+    if (typeof window === 'undefined') return;
+    
     const sections = document.querySelectorAll("section[id]");
+    if (sections.length === 0) return;
+    
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -26,28 +31,11 @@ export default function Header({landing}) {
   }, []);
 
   useEffect(() => {
+    // Only run on client side
+    if (typeof window === 'undefined') return;
+    
     const handleScroll = () => {
-      if (landing) {
-      if (window.scrollY > 100) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }}
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  const toggleMobileNav = () => {
-    setShowMobileNav(!showMobileNav);
-  };
-
-  useEffect(() => {
-    const handleScroll = () => {
-
-        setIsScrolled(window.scrollY > 100);
-      
+      setIsScrolled(window.scrollY > 100);
     };
 
     const handleResize = () => {
@@ -56,28 +44,50 @@ export default function Header({landing}) {
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    // Only add scroll listener if landing is true
+    if (landing) {
+      window.addEventListener("scroll", handleScroll);
+    }
     window.addEventListener("resize", handleResize);
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
       window.removeEventListener("resize", handleResize);
     };
-  }, []);
+  }, [landing]);
+
+  const toggleMobileNav = () => {
+    setShowMobileNav(!showMobileNav);
+  };
+
+  const handleNavClick = (section) => {
+    setActiveSection(section);
+    setShowMobileNav(false);
+  };
 
   return (
     <header
-  id="header"
-  className={`fixed-top ${
-    landing
-      ? `${isScrolled ? "header-scrolled" : "header-transparent"}`
-      : ""
-  }`}
-  style={landing ? { height: '120px' } : {background: 'rgba(13, 24, 22, 1)' }}
->
-
+      id="header"
+      className={`fixed-top ${
+        landing
+          ? `${isScrolled ? "header-scrolled" : "header-transparent"}`
+          : ""
+      }`}
+      style={
+        landing 
+          ? { height: '120px' } 
+          : { background: 'rgba(13, 24, 22, 1)' }
+      }
+    >
       {landing && <TopBar />}
-      <div className="container d-flex align-items-center justify-content-between" style={!landing ? { marginTop: '-30px' }:{marginTop: '-20px'}}>
+      <div 
+        className="container d-flex align-items-center justify-content-between" 
+        style={
+          !landing 
+            ? { marginTop: '-30px' } 
+            : { marginTop: '-20px' }
+        }
+      >
         <div className="logo">
           <a href="/">
             <Image
@@ -106,7 +116,7 @@ export default function Header({landing}) {
                   activeSection === "hero" ? "active" : ""
                 }`}
                 href="/nasus-integration#hero"
-                onClick={() => {setActiveSection("hero"), setShowMobileNav(false)}}
+                onClick={() => handleNavClick("hero")}
               >
                 Home
               </a>
@@ -117,19 +127,18 @@ export default function Header({landing}) {
                   activeSection === "about" ? "active" : ""
                 }`}
                 href="/nasus-integration#about"
-                onClick={() => {setActiveSection("about"), setShowMobileNav(false)}}
+                onClick={() => handleNavClick("about")}
               >
                 About Us
               </a>
             </li>
-            
             <li className="px-2">
               <a
                 className={`nav-link scrollto ${
                   activeSection === "services" ? "active" : ""
                 }`}
                 href="/nasus-integration#services"
-                onClick={() => {setActiveSection("services"), setShowMobileNav(false)}}
+                onClick={() => handleNavClick("services")}
               >
                 Services
               </a>
@@ -140,7 +149,7 @@ export default function Header({landing}) {
                   activeSection === "portfolio" ? "active" : ""
                 }`}
                 href="/nasus-integration#portfolio"
-                onClick={() => {setActiveSection("portfolio"), setShowMobileNav(false)}}
+                onClick={() => handleNavClick("portfolio")}
               >
                 Projects
               </a>
@@ -151,7 +160,7 @@ export default function Header({landing}) {
                   activeSection === "team" ? "active" : ""
                 }`}
                 href="/nasus-integration#team"
-                onClick={() => {setActiveSection("team"), setShowMobileNav(false)}}
+                onClick={() => handleNavClick("team")}
               >
                 Team
               </a>
@@ -162,7 +171,7 @@ export default function Header({landing}) {
                   activeSection === "contact" ? "active" : ""
                 }`}
                 href="/nasus-integration#contact"
-                onClick={() => {setActiveSection("contact"), setShowMobileNav(false)}}
+                onClick={() => handleNavClick("contact")}
               >
                 Contact
               </a>
@@ -177,7 +186,7 @@ export default function Header({landing}) {
                 className="btn btn-warning p-2"
                 href="/nasus-integration#cta"
                 style={{ background: "#f38428" }}
-                onClick={() => {setActiveSection("cta"), setShowMobileNav(false)}}
+                onClick={() => handleNavClick("cta")}
               >
                 Get Started
               </a>
