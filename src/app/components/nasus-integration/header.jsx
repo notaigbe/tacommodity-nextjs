@@ -7,7 +7,7 @@ export default function Header({landing}) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [showMobileNav, setShowMobileNav] = useState(false);
   const [activeSection, setActiveSection] = useState("hero");
-  console.log(landing);
+  // console.log(landing);
   useEffect(() => {
     const sections = document.querySelectorAll("section[id]");
     const observer = new IntersectionObserver(
@@ -70,7 +70,7 @@ export default function Header({landing}) {
   id="header"
   className={`fixed-top ${
     landing
-      ? `h-120 ${isScrolled ? "header-scrolled" : "header-transparent"}`
+      ? `${isScrolled ? "header-scrolled" : "header-transparent"}`
       : ""
   }`}
   style={landing ? { height: '120px' } : {background: 'rgba(13, 24, 22, 1)' }}
