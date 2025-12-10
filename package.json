@@ -19,7 +19,7 @@
     "fslightbox-react": "^1.8.0",
     "isotope-layout": "^3.0.6",
     "jquery": "^3.7.1",
-    "next": "15.1.7",
+    "next": "15.1.9",
     "postgres": "^3.4.5",
     "react": "^19.0.0",
     "react-bootstrap-icons": "^1.11.5",
