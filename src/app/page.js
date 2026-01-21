@@ -19,7 +19,7 @@ import WhatWeDo from "./components/what-we-do";
 import { TACommodityTeam } from "./components/team";
 import { TACommodityContact } from "./components/contact";
 import Services from "./components/services";
-import { TACommodityFooter } from "./components/Footer";
+import { TACommodityFooter } from "./components/footer";
 import Clients from "./components/clients";
 import Script from "next/script";
 import BrandWrapper from "./components/BrandWrapper";

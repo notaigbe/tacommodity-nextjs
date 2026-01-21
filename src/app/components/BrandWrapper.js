@@ -1,6 +1,6 @@
-import Topbar from "./Topbar";
-import { Header, PHAGROHeader, BFGHeader } from "./Header";
-import { TACommodityFooter, PHAGROFooter, BFGFooter } from "./Footer";
+import Topbar from "./topbar";
+import { Header, PHAGROHeader, BFGHeader } from "./header";
+import { TACommodityFooter, PHAGROFooter, BFGFooter } from "./footer";
 
 export default function BrandWrapper({ children, brand = "TA" }) {
   // Brand logic for Header and Footer
