@@ -1,4 +1,4 @@
-# robots.txt for https://troikainvestmentng.com
+# robots.txt for https://tacommodity.com
 # Purpose: Allow Googlebot to crawl main pages while blocking irrelevant or non-existent paths
 
 User-agent: *

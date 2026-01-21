@@ -11,12 +11,13 @@ import Head from "next/head";
 import { PHAGROPortfolio } from "@/app/components/portfolio";
 import { PHAGROContact } from "@/app/components/contact";
 import { PHAGROTeam } from "@/app/components/team";
-import Topbar from "@/app/components/topbar";
-import { PHAGROHeader } from "@/app/components/header";
-import Breadcrumbs from "@/app/components/breadcrumbs";
+// import Topbar from "@/app/components/Topbar";
+// import { PHAGROHeader } from "@/app/components/Header";
+// import Breadcrumbs from "@/app/components/breadcrumbs";
 import { PHAGROAbout } from "@/app/components/about";
 import Stats from "@/app/components/stats";
-import { PHAGROFooter } from "@/app/components/footer";
+// import { PHAGROFooter } from "@/app/components/Footer";
+import BrandWrapper from "@/app/components/BrandWrapper";
 
 export default function WomenSustainableGroup() {
     useEffect(() => {
@@ -24,7 +25,7 @@ export default function WomenSustainableGroup() {
     }, []);
 
     return (
-        <>
+        <BrandWrapper brand="PHAGRO">
             <Head>
                 <title>Women Sustainable Group</title>
                 <meta
@@ -61,11 +62,11 @@ export default function WomenSustainableGroup() {
                 />
                 <meta name="twitter:image" content="/assets/img/phagro_logo.png" />
                 {/* Add a custom favicon for this page */}
-                <link rel="icon" href="/assets/img/favicon.ico" />
+                <link rel="icon" href="/assets/img/phagro/favicon.ico" />
             </Head>
-            <Topbar page="Women Sustainable Group" />
-            <PHAGROHeader />
-            <Breadcrumbs page="Women Sustainable Group" />
+            {/* <Topbar page="Women Sustainable Group" />
+            <PHAGROHeader /> */}
+            {/* <Breadcrumbs page="Women Sustainable Group" /> */}
             <main className={styles.main}>
                 <PHAGROAbout />
                 <Stats />
@@ -74,7 +75,7 @@ export default function WomenSustainableGroup() {
                 <PHAGROContact />
             </main>
 
-            <PHAGROFooter />
+            {/* <PHAGROFooter /> */}
 
             {/* <Script src="assets/vendor/aos/aos.js" /> */}
             <Script src="assets/js/main.js" />
@@ -83,6 +84,6 @@ export default function WomenSustainableGroup() {
             <Script src="assets/vendor/isotope-layout/isotope.pkgd.min.js" />
             {/* <Script src="assets/vendor/swiper/swiper-bundle.min.js" /> */}
             <Script src="https://code.jquery.com/jquery-3.6.4.slim.min.js" />
-        </>
+        </BrandWrapper>
     );
 }

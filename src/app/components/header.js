@@ -109,7 +109,7 @@ export function Header() {
               </li>
               <li className="dropdown">
                 <a href="#">
-                  <span>NGO Support</span>{" "}
+                  <span>Subsidiaries</span>{" "}
                   <i className="bi bi-chevron-down"></i>
                 </a>
                 <ul>
@@ -121,6 +121,11 @@ export function Header() {
                   <li>
                     <Link href="/women-sustainable-group">
                       Women Sustainable Group
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/bfg-capital-management">
+                      BFG Capital Management
                     </Link>
                   </li>
                 </ul>
@@ -180,18 +185,9 @@ export function Header() {
 export function PHAGROHeader() {
   
   const [isActive, setIsActive] = useState(false);
-  // const ref = useRef(null);
 
   useEffect(() => {
-    // const handleClick = (event) => {
-    //   setIsActive(!isActive)
-    //   document.querySelector("#navbar").classList.toggle("navbar-mobile");
- 
-    // };
 
-    // const element = ref.current;
-
-    // element.addEventListener("click", handleClick);
 
     const header = document.querySelector('#header');
     
@@ -342,5 +338,72 @@ export function PHAGROHeader() {
       </header>
       {/* <Script src="assets/js/main.js" /> */}
     </>
+  );
+}
+
+export function BFGHeader() {
+  const [isActive, setIsActive] = useState(false);
+
+  // Re-using the scroll logic for the "header-scrolled" effect
+    useEffect(() => {
+
+
+    const header = document.querySelector('#header');
+    
+    if (header) {
+      const headerScrolled = () => {
+        header.classList.toggle('header-scrolled', window.scrollY > 100);
+      };
+    
+      window.addEventListener('load', headerScrolled);
+      document.addEventListener('scroll', headerScrolled);
+    }
+
+    let preloader = document.querySelector('#preloader');
+    if (preloader) {
+        window.addEventListener('load', () => {
+            preloader.remove()
+        });
+    }
+
+    // return () => {
+    //   element.removeEventListener("click", handleClick);
+    // };
+    
+  }, []);
+
+  return (
+    <header id="header" className="d-flex align-items-center bfg-navbar">
+      <div className="container d-flex align-items-center">
+        <div className="logo me-auto">
+          <h1>
+            <Link href="/bfg-capital-management" style={{ color: "#C5A059", display: 'flex', alignItems: 'center', gap: '10px' }}>
+              <Image
+                src="/assets/img/bfg_logo_full.png" 
+                alt="BFG Capital Logo"
+                width={350}
+                height={300}
+                style={{ height: "auto", width: "100%" }}
+              />
+              {/* BFG CAPITAL */}
+            </Link>
+          </h1>
+        </div>
+
+        <nav id="navbar" className={isActive ? "navbar navbar-mobile" : "navbar"}>
+          <ul>
+            <li><Link className="nav-link active" href="/">Return to TA Commodity</Link></li>
+            <li><Link className="nav-link" href="/bfg-capital-management#about">About BFG</Link></li>
+            <li><Link className="nav-link" href="/bfg-capital-management#investments">Investments</Link></li>
+            <li><Link className="nav-link" href="/bfg-capital-management#portfolio">Portfolio</Link></li>
+            <li><Link className="nav-link" href="/bfg-capital-management#contact">Contact</Link></li>
+          </ul>
+          
+          <div className="mobile-nav-toggle" onClick={() => setIsActive(!isActive)}>
+            {isActive ? <X size={40} color="#C5A059" /> : <List size={40} color="#C5A059" />}
+          </div>
+        </nav>
+      </div>
+    </header>
   );
 }

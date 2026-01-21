@@ -9,8 +9,8 @@ import "aos/dist/aos.css";
 
 import styles from "./page.module.css";
 import "./styles/style.css";
-import Topbar from "./components/topbar";
-import { Header } from "./components/header";
+// import Topbar from "./components/Topbar";
+// import { Header } from "./components/Header";
 const Hero = dynamic(() => import("./components/hero"), { ssr: false }); // Lazy loading
 import { TACommodityAbout } from "./components/about";
 import AboutList from "./components/about-lists";
@@ -19,40 +19,45 @@ import WhatWeDo from "./components/what-we-do";
 import { TACommodityTeam } from "./components/team";
 import { TACommodityContact } from "./components/contact";
 import Services from "./components/services";
-import { TACommodityFooter } from "./components/footer";
+import { TACommodityFooter } from "./components/Footer";
 import Clients from "./components/clients";
 import Script from "next/script";
+import BrandWrapper from "./components/BrandWrapper";
 
 export default function Home() {
   const [mounted, setMounted] = useState(false);
 
-  useEffect(() => {
-    setMounted(true); // Ensures client-side hydration
-    Aos.init({ offset: 100 });
+useEffect(() => {
+  setMounted(true);
+  Aos.init({ offset: 100 });
 
-    const backtotop = document.querySelector('.back-to-top');
-    
-    if (backtotop) {
-      const toggleBacktotop = () => {
-        if (window.scrollY > 100) {
-          backtotop.classList.add('active');
-        } else {
-          backtotop.classList.remove('active');
-        }
-      };
-    
-      window.addEventListener('load', toggleBacktotop);
-      document.addEventListener('scroll', toggleBacktotop);
+  const toggleBacktotop = () => {
+    const backtotop = document.querySelector(".back-to-top");
+    if (!backtotop) return;
+
+    if (window.scrollY > 100) {
+      backtotop.classList.add("active");
+    } else {
+      backtotop.classList.remove("active");
     }
+  };
 
-  }, []);
+  window.addEventListener("load", toggleBacktotop);
+  document.addEventListener("scroll", toggleBacktotop);
+
+  return () => {
+    window.removeEventListener("load", toggleBacktotop);
+    document.removeEventListener("scroll", toggleBacktotop);
+  };
+}, []);
+
 
   if (!mounted) return null; // Avoid hydration mismatch
 
   return (
-    <>
-      <Topbar />
-      <Header />
+    <BrandWrapper brand="TA">
+      {/* <Topbar />
+      <Header /> */}
       <Hero />
 
       <main className={styles.main}>
@@ -66,11 +71,11 @@ export default function Home() {
         <TACommodityContact />
       </main>
 
-      <TACommodityFooter />
+      {/* <TACommodityFooter /> */}
 
       {/* ✅ Optimized Script Loading */}
       <Script src="/assets/js/main.js" strategy="lazyOnload" defer />
       {/* <Script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js" strategy="lazyOnload" defer /> */}
-    </>
+    </BrandWrapper>
   );
 }

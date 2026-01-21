@@ -3,6 +3,7 @@ import "../styles/style.css";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+
 export function TACommodityFooter() {
   const [year, setYear] = useState(new Date().getFullYear());
   return (
@@ -336,3 +337,72 @@ export function PHAGROFooter() {
     </>
   );
 }
+
+export function BFGFooter() {
+  const [year] = useState(new Date().getFullYear());
+
+  return (
+    <footer id="footer" style={{ background: "#121212" }}>
+      <div className="footer-top" style={{ background: "#1a1a1a" }}>
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-4 col-md-6 footer-info">
+              <h3 style={{ color: "#C5A059", fontFamily: "Garamond, sans-serif" }}>BFG CAPITAL MANAGEMENT LIMITED</h3>
+              <a href="#">
+                  <Image
+                    src="/assets/img/bfg_logo.png"
+                    alt="bfg_logo"
+                    className="img-fluid"
+                    width={500}
+                    height={500}
+                    style={{ width: "30%", height: "auto" }}
+                  />
+                </a>
+              <p>
+                <strong>Wealth Creation & Asset Management</strong><br />
+                A specialized investment subsidiary of TA Commodity Producers Co Nig Ltd.
+              </p>
+              <div className="social-links mt-3">
+                <a href="#" className="linkedin" style={{ background: "#C5A059" }}><i className="bx bxl-linkedin"></i></a>
+                <a href="#" className="twitter" style={{ background: "#C5A059" }}><i className="bx bxl-twitter"></i></a>
+              </div>
+            </div>
+
+            <div className="col-lg-3 col-md-6 footer-links">
+              <h4>Investment Services</h4>
+              <ul>
+                <li><i className="bx bx-chevron-right"></i> <Link href="#investments">Capital Growth</Link></li>
+                <li><i className="bx bx-chevron-right"></i> <Link href="#portfolio">Project Financing</Link></li>
+                <li><i className="bx bx-chevron-right"></i> <Link href="#about">Wealth Management</Link></li>
+              </ul>
+            </div>
+
+            <div className="col-lg-4 col-md-6 footer-newsletter">
+              <h4>Market Insights</h4>
+              <p>Subscribe to our quarterly investment outlook.</p>
+              <form action="" method="post">
+                <input type="email" name="email" placeholder="Your Investment Email" />
+                <input 
+                  type="submit" 
+                  value="Subscribe" 
+                  style={{ background: "#C5A059", color: "#fff" }} 
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="container text-center py-4">
+        <div className="copyright">
+          &copy; {year} <strong><span>BFG Capital Management</span></strong>. 
+          Subsidiary of TA Commodity.
+        </div>
+        <div className="credits" style={{ fontSize: '12px', opacity: 0.7 }}>
+          Regulated Wealth Management Services
+        </div>
+      </div>
+    </footer>
+  );
+}
+

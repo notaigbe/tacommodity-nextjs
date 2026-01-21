@@ -7,7 +7,28 @@
 
 
 /* 
+/* Apply the fonts to the CSS variables */
+:root {
+  --font-main: var(--font-open-sans), sans-serif;
+  --font-heading: var(--font-raleway), sans-serif;
+}
 
+body {
+  font-family: var(--font-main);
+}
+
+/* h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+} */
+
+/* Brand specific overrides */
+.bfg-brand-context {
+  --primary-color: #C5A059;
+}
+
+.phagro-brand-context {
+  --primary-color: #1C5CA1;
+}
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -1022,4 +1043,52 @@ section {
 #map {
     height: 400px; /* The height is 400 pixels */
     width: 100%; /* The width is the width of the web page */
+}
+
+/* --- BFG Theme Specifics --- */
+.bfg-navbar .logo h1 a {
+  color: #C5A059 !important;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.bfg-navbar .navbar a:hover, 
+.bfg-navbar .navbar .active {
+  color: #C5A059 !important;
+}
+
+.bfg-navbar .navbar-mobile ul {
+  border-top: 3px solid #C5A059;
+}
+
+/* Back to top override for BFG */
+.bfg-theme .back-to-top {
+  background: #C5A059;
+}
+
+.bfg-theme .back-to-top:hover {
+  background: #a38345;
+}
+
+/* PHAGRO Topbar Border */
+.phagro-topbar {
+  border-bottom: 1px solid #1C5CA1;
+}
+
+/* BFG Topbar Border */
+.bfg-topbar {
+  border-bottom: 1px solid #C5A059;
+  background: #121212; /* Darker topbar for BFG prestige look */
+}
+
+.bfg-topbar a {
+  color: #C5A059 !important;
+}
+
+/* TA Topbar (Default) */
+#topbar {
+  background: #fbfbfb;
+  height: 40px;
+  font-size: 14px;
+  transition: all 0.5s;
 }
