@@ -49,7 +49,7 @@ export default function WomenSustainableGroup() {
                 <meta property="og:image" content="/assets/img/phagro_logo.png" />
                 <meta
                     property="og:url"
-                    content="https://tacommodity-nextjs.vercel.app/women-sustainable-group"
+                    content="https://tacommodity.com/women-sustainable-group"
                 />
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta

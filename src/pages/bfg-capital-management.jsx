@@ -67,7 +67,7 @@ export default function LandingPage() {
         <meta property="og:image" content="/assets/img/bfg_logo.png" />
         <meta
           property="og:url"
-          content="https://tacommodity-nextjs.vercel.app/bfg-capital-management"
+          content="https://tacommodity.com/bfg-capital-management"
         />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
