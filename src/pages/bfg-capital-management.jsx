@@ -240,7 +240,7 @@ export default function LandingPage() {
           </section>
 
           {/* FAQ Section */}
-          <section id="faq" className="faq section-bg">
+          <section id="partnerships" className="faq section-bg">
             <div className="container">
               <div className="section-title" data-aos="fade-up">
                 <h2>Partnership Opportunities</h2>

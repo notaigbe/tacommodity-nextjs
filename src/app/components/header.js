@@ -394,8 +394,9 @@ export function BFGHeader() {
           <ul>
             <li><Link className="nav-link active" href="/">Return to TA Commodity</Link></li>
             <li><Link className="nav-link" href="/bfg-capital-management#about">About BFG</Link></li>
-            <li><Link className="nav-link" href="/bfg-capital-management#investments">Investments</Link></li>
-            <li><Link className="nav-link" href="/bfg-capital-management#portfolio">Portfolio</Link></li>
+            <li><Link className="nav-link" href="/bfg-capital-management#services">Our Services</Link></li>
+            <li><Link className="nav-link" href="/bfg-capital-management#impact">Impact</Link></li>
+            <li><Link className="nav-link" href="/bfg-capital-management#partnerships">Partnerships</Link></li>
             <li><Link className="nav-link" href="/bfg-capital-management#contact">Contact</Link></li>
           </ul>
           
