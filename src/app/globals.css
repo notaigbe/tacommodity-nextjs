@@ -278,69 +278,391 @@ h1, h2, h3, h4, h5, h6, .font-primary {
     display: none;
   }
 }
-.navbar-mobile {
-  position: fixed;
-  overflow: hidden;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  background: rgba(31, 53, 72, 0.9);
-  transition: 0.3s;
-  z-index: 998;
-}
-.navbar-mobile .mobile-nav-toggle {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-}
-.navbar-mobile ul {
-  display: block;
-  position: absolute;
-  top: 55px;
-  right: 15px;
-  bottom: 15px;
-  left: 15px;
-  padding: 10px 0;
-  background-color: #fff;
-  overflow-y: auto;
-  transition: 0.3s;
-}
-.navbar-mobile a, .navbar-mobile a:focus {
-  padding: 10px 20px;
-  font-size: 15px;
-  color: #1f3548;
-}
-.navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-  color: #214f3c;
-}
-.navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
-  margin: 15px;
-}
-.navbar-mobile .dropdown ul {
+/**
+ * MOBILE MENU - COMPLETE WORKING STYLES
+ * 
+ * Copy this entire section into your style.css
+ * This ensures the mobile menu shows when clicked
+ */
+
+/* ============================================
+   MOBILE NAV TOGGLE BUTTON - CRITICAL
+   ============================================ */
+
+.mobile-nav-toggle {
   position: static;
+  z-index: 999;
   display: none;
-  margin: 10px 20px;
+  align-items: center;
+  justify-content: center;
+  background: none !important;
+  border: none !important;
+  cursor: pointer;
+  padding: 8px !important;
+  line-height: 0;
+  transition: all 0.3s ease;
+}
+
+.mobile-nav-toggle:hover {
+  opacity: 0.8;
+}
+
+.mobile-nav-toggle:focus {
+  outline: 2px solid #214f3c;
+  outline-offset: 2px;
+}
+
+/* Show on mobile screens */
+@media (max-width: 991px) {
+  .mobile-nav-toggle {
+    display: flex !important;
+  }
+}
+
+/* ============================================
+   NAVBAR DESKTOP - NORMAL DISPLAY
+   ============================================ */
+
+.navbar {
+  padding: 0;
+  position: relative;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar a,
+.navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 10px 30px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  color: #214f3c;
+  white-space: nowrap;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.navbar a i,
+.navbar a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover > a {
+  color: #288f5f;
+}
+
+/* Desktop dropdown hover */
+.navbar .dropdown ul {
+  display: none;
+  position: absolute;
+  left: 14px;
+  top: 100%;
+  margin: 0;
   padding: 10px 0;
   z-index: 99;
-  opacity: 1;
-  visibility: visible;
+  opacity: 0;
+  visibility: hidden;
   background: #fff;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: 0.3s;
+  border-radius: 4px;
+  list-style: none;
 }
-.navbar-mobile .dropdown ul li {
+
+.navbar .dropdown ul li {
   min-width: 200px;
 }
-.navbar-mobile .dropdown ul a {
+
+.navbar .dropdown ul a {
   padding: 10px 20px;
+  text-transform: none;
+  text-decoration: none;
 }
-.navbar-mobile .dropdown ul a i {
+
+.navbar .dropdown ul a i {
   font-size: 12px;
 }
-.navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
-  color: #214f3c;
+
+.navbar .dropdown ul a:hover,
+.navbar .dropdown ul .active:hover,
+.navbar .dropdown ul li:hover > a {
+  color: #288f5f;
 }
-.navbar-mobile .dropdown > .dropdown-active {
+
+.navbar .dropdown:hover > ul {
+  opacity: 1;
+  visibility: visible;
   display: block;
 }
 
+.navbar .dropdown .dropdown ul {
+  top: 0;
+  left: calc(100% - 30px);
+  visibility: hidden;
+}
+
+.navbar .dropdown .dropdown:hover > ul {
+  opacity: 1;
+  top: 0;
+  left: 100%;
+  visibility: visible;
+}
+
+/* ============================================
+   MOBILE NAVBAR - FULLSCREEN OVERLAY
+   ============================================ */
+
+/* Hide menu on desktop */
+@media (min-width: 992px) {
+  .mobile-nav-toggle {
+    display: none !important;
+  }
+
+  .navbar ul {
+    display: flex !important;
+  }
+
+  .navbar.navbar-mobile {
+    position: relative !important;
+    overflow: visible !important;
+    background: transparent !important;
+    top: auto !important;
+    left: auto !important;
+    width: auto !important;
+    height: auto !important;
+    z-index: auto !important;
+  }
+
+  .navbar.navbar-mobile ul {
+    display: flex !important;
+    position: static !important;
+    background: transparent !important;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    bottom: auto !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+
+  .navbar.navbar-mobile a,
+  .navbar.navbar-mobile a:focus {
+    padding: 10px 0 10px 30px;
+    font-size: 15px;
+    color: #214f3c;
+  }
+
+  .navbar.navbar-mobile .dropdown > a {
+    cursor: auto;
+  }
+}
+
+/* Mobile menu - show as fullscreen overlay */
+@media (max-width: 991px) {
+  .navbar ul {
+    display: none;
+  }
+
+  /* When navbar has navbar-mobile class, show it fullscreen */
+  .navbar.navbar-mobile {
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(31, 53, 72, 0.95);
+    transition: opacity 0.3s ease-in-out;
+    z-index: 998;
+    width: 100vw;
+    height: 100vh;
+    display: block;
+  }
+
+  /* Show menu items when navbar-mobile is active */
+  .navbar.navbar-mobile ul {
+    display: block !important;
+    position: absolute;
+    top: 55px;
+    right: 15px;
+    bottom: 15px;
+    left: 15px;
+    padding: 0;
+    background-color: #fff;
+    overflow-y: auto;
+    transition: 0.3s;
+    border-radius: 4px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+    list-style: none;
+  }
+
+  /* Menu items - bigger touch targets */
+  .navbar.navbar-mobile a,
+  .navbar.navbar-mobile a:focus {
+    display: block;
+    padding: 18px 20px;
+    font-size: 15px;
+    color: #1f3548;
+    border-bottom: 1px solid #f0f0f0;
+    transition: all 0.3s;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+  }
+
+  /* Remove last item's border */
+  .navbar.navbar-mobile li:last-child a {
+    border-bottom: none;
+  }
+
+  /* Hover/active states */
+  .navbar.navbar-mobile a:hover,
+  .navbar.navbar-mobile .active,
+  .navbar.navbar-mobile li:hover > a {
+    color: #214f3c;
+    background-color: #f8f8f8;
+    padding-left: 25px;
+  }
+
+  /* Hide dropdown menus by default */
+  .navbar.navbar-mobile .dropdown ul {
+    display: none !important;
+    position: static;
+    margin: 0;
+    padding: 8px 0;
+    z-index: 99;
+    opacity: 1;
+    visibility: visible;
+    background: #f8f8f8;
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.05);
+    list-style: none;
+  }
+
+  .navbar.navbar-mobile .dropdown ul li {
+    min-width: auto;
+    margin: 0;
+    list-style: none;
+  }
+
+  /* Dropdown item styling */
+  .navbar.navbar-mobile .dropdown ul a {
+    padding: 14px 20px 14px 35px;
+    font-size: 14px;
+    border-bottom: 1px solid #e8e8e8;
+    color: #555;
+    min-height: auto;
+  }
+
+  .navbar.navbar-mobile .dropdown ul a:hover,
+  .navbar.navbar-mobile .dropdown ul .active:hover,
+  .navbar.navbar-mobile .dropdown ul li:hover > a {
+    color: #214f3c;
+    background-color: #f0f0f0;
+    padding-left: 40px;
+  }
+
+  .navbar.navbar-mobile .dropdown ul li:last-child a {
+    border-bottom: none;
+  }
+
+  /* Show dropdown when it has active class */
+  .navbar.navbar-mobile .dropdown.active ul {
+    display: block !important;
+  }
+
+  /* Chevron rotation */
+  .navbar.navbar-mobile .dropdown > a svg {
+    transition: transform 0.3s ease;
+  }
+
+  .navbar.navbar-mobile .dropdown.active > a svg {
+    transform: rotate(180deg);
+  }
+
+  /* Toggle button position in mobile menu */
+  .navbar.navbar-mobile .mobile-nav-toggle {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 999;
+  }
+}
+
+/* ============================================
+   DROPDOWN STYLING
+   ============================================ */
+
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+.dropdown-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* ============================================
+   UTILITY - Ensure proper list styling
+   ============================================ */
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  list-style: none;
+}
+
+/* ============================================
+   ANIMATIONS
+   ============================================ */
+
+@keyframes dropdownSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.navbar-mobile .dropdown.active ul li {
+  animation: dropdownSlide 0.3s ease forwards;
+}
+
+.navbar-mobile .dropdown.active ul li:nth-child(1) {
+  animation-delay: 0.05s;
+}
+
+.navbar-mobile .dropdown.active ul li:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.navbar-mobile .dropdown.active ul li:nth-child(3) {
+  animation-delay: 0.15s;
+}
