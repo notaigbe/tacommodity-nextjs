@@ -10,52 +10,44 @@ import "@/app/styles/style.css";
 
 const OPEN_POSITIONS = [
   {
-    title: "Agronomist",
+    title: "Agric Extension Officer",
     type: "Full-time",
-    location: "Port Harcourt, Rivers State",
+    location: "Port Harcourt, Rivers State / Benin City, Edo State",
     department: "Agriculture",
     summary:
       "Support smallholder farmers with crop management advice, soil analysis, and yield optimisation across our partner farm clusters.",
   },
   {
-    title: "Field Officer",
+    title: "Project Team Member",
     type: "Full-time",
-    location: "Edo State / Delta State",
-    department: "Operations",
+    location: "Port Harcourt, Rivers State / Benin City, Edo State",
+    department: "Projects",
     summary:
-      "Act as the on-ground link between TA Commodity and farming cooperatives — coordinating input distribution, data collection, and farmer training sessions.",
+      "Contribute to the planning and execution of agricultural development projects, coordinating between internal teams, partners, and farming communities.",
   },
   {
-    title: "Supply Chain Manager",
+    title: "Human Resource Office Assistant",
     type: "Full-time",
-    location: "Lagos",
-    department: "Logistics",
+    location: "Port Harcourt, Rivers State / Benin City, Edo State",
+    department: "Administration",
     summary:
-      "Oversee end-to-end commodity movement from farm gate to export port, managing transport partners, warehousing, and quality control.",
+      "Provide administrative and HR support — managing staff records, coordinating recruitment logistics, and assisting with onboarding and office operations.",
   },
   {
-    title: "Business Development Executive",
+    title: "Accountant",
     type: "Full-time",
-    location: "Lagos",
-    department: "Commercial",
-    summary:
-      "Identify and develop new buyer relationships in global commodity markets, structuring offtake agreements and representing TA Commodity at trade events.",
-  },
-  {
-    title: "Finance Officer",
-    type: "Full-time",
-    location: "Lagos",
+    location: "Port Harcourt, Rivers State / Benin City, Edo State",
     department: "Finance",
     summary:
       "Manage financial reporting, budget tracking, and grant compliance for our smallholder-support programmes and commercial trading operations.",
   },
   {
-    title: "IT / Data Analyst",
-    type: "Contract",
-    location: "Remote",
-    department: "Technology",
+    title: "Field Worker",
+    type: "Full-time",
+    location: "Port Harcourt, Rivers State / Benin City, Edo State",
+    department: "Operations",
     summary:
-      "Build dashboards, analyse farm and trading data, and support digital transformation initiatives across our operations.",
+      "Act as the on-ground link between TA Commodity and farming cooperatives — coordinating input distribution, data collection, and farmer training sessions.",
   },
 ];
 
@@ -70,11 +62,10 @@ const BENEFITS = [
 
 const DEPT_COLORS = {
   Agriculture: "#2d6b52",
-  Operations: "#3a7d5e",
-  Logistics: "#1a3d2e",
-  Commercial: "#3d8f6b",
+  Projects: "#3a7d5e",
+  Administration: "#1a3d2e",
   Finance: "#285c47",
-  Technology: "#224e3c",
+  Operations: "#224e3c",
 };
 
 export default function CareersPage() {

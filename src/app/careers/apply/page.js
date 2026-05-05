@@ -191,7 +191,7 @@ function ApplyForm() {
             <h2>Job Application</h2>
             <ol>
               <li><Link href="/">Home</Link></li>
-              <li>Careers</li>
+              <li><Link href="/careers">Careers</Link></li>
               <li>Apply</li>
             </ol>
           </div>
@@ -309,7 +309,7 @@ function ApplyForm() {
                         id="location"
                         type="text"
                         className={`form-control${errors.location ? " is-invalid" : ""}`}
-                        placeholder="e.g. Lagos, Nigeria"
+                        placeholder="e.g. Port Harcourt, Rivers State"
                         {...register("location")}
                       />
                       {errors.location && (
@@ -376,8 +376,8 @@ function ApplyForm() {
                       {...register("preferredLocation")}
                     >
                       <option value="">No preference</option>
-                      <option value="Benin">Benin</option>
-                      <option value="Port Harcourt">Port Harcourt</option>
+                      <option value="Port Harcourt, Rivers State">Port Harcourt, Rivers State</option>
+                      <option value="Benin City, Edo State">Benin City, Edo State</option>
                     </select>
                   </div>
 
@@ -630,7 +630,7 @@ function ApplyForm() {
                   <div className="info-box border h-100">
                     <i className="bx bx-map"></i>
                     <h3>Location</h3>
-                    <p>Lagos · Port Harcourt · Benin City, Nigeria</p>
+                    <p>Port Harcourt, Rivers State · Benin City, Edo State</p>
                   </div>
                 </div>
               </div>
