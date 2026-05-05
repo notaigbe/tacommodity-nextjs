@@ -21,6 +21,7 @@ import { TACommodityContact } from "./components/contact";
 import Services from "./components/services";
 import { TACommodityFooter } from "./components/footer";
 import Clients from "./components/clients";
+import CareersCTA from "./components/careers-cta";
 import Script from "next/script";
 import BrandWrapper from "./components/BrandWrapper";
 
@@ -66,6 +67,7 @@ useEffect(() => {
         <Services />
         <WhatWeDo />
         <Clients />
+        <CareersCTA />
         <TACommodityPortfolio />
         <TACommodityTeam />
         <TACommodityContact />

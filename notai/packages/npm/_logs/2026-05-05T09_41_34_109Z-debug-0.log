@@ -1,0 +1,49 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Users\notai\AppData\Roaming\npm\node_modules\npm\bin\npm-cli.js
+1 info using npm@11.11.0
+2 info using node@v22.14.0
+3 silly config load:file:C:\Users\notai\AppData\Roaming\npm\node_modules\npm\npmrc
+4 silly config load:file:d:\Software Projects\tacommodity-nextjs\.npmrc
+5 silly config load:file:C:\Users\notai\.npmrc
+6 silly config load:file:C:\Users\notai\AppData\Roaming\npm\etc\npmrc
+7 verbose title npm outdated
+8 verbose argv "outdated" "--json"
+9 verbose logfile logs-max:10 dir:D:\Software Projects\tacommodity-nextjs\notai\packages\npm\_logs\2026-05-05T09_41_34_109Z-
+10 verbose logfile D:\Software Projects\tacommodity-nextjs\notai\packages\npm\_logs\2026-05-05T09_41_34_109Z-debug-0.log
+11 silly logfile start cleaning logs, removing 2 files
+12 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+13 silly logfile done cleaning log files
+14 http fetch GET 200 https://registry.npmjs.org/bootstrap-icons 2072ms (cache revalidated)
+15 http fetch GET 200 https://registry.npmjs.org/bootstrap 2101ms (cache revalidated)
+16 http fetch GET 200 https://registry.npmjs.org/resend 2060ms (cache revalidated)
+17 http fetch GET https://registry.npmjs.org/jquery attempt 1 failed with ERR_SSL_SSLV3_ALERT_BAD_RECORD_MAC
+18 http fetch GET 200 https://registry.npmjs.org/fslightbox-react 2210ms (cache revalidated)
+19 http fetch GET 200 https://registry.npmjs.org/boxicons 2222ms (cache revalidated)
+20 http fetch GET 200 https://registry.npmjs.org/aos 2237ms (cache revalidated)
+21 http fetch GET 200 https://registry.npmjs.org/isotope-layout 2329ms (cache revalidated)
+22 http fetch GET 200 https://registry.npmjs.org/swiper 2301ms (cache revalidated)
+23 http fetch GET 200 https://registry.npmjs.org/yet-another-react-lightbox 2327ms (cache revalidated)
+24 http fetch GET 200 https://registry.npmjs.org/aws-sdk 2455ms (cache revalidated)
+25 http fetch GET 200 https://registry.npmjs.org/@srexi%2fpurecounterjs 2812ms (cache revalidated)
+26 http fetch GET 200 https://registry.npmjs.org/react-bootstrap-icons 2765ms (cache revalidated)
+27 http fetch GET 200 https://registry.npmjs.org/postgres 2805ms (cache revalidated)
+28 http fetch GET 200 https://registry.npmjs.org/react-countup 2776ms (cache revalidated)
+29 http fetch GET 200 https://registry.npmjs.org/@hookform%2fresolvers 2850ms (cache miss)
+30 http fetch GET 200 https://registry.npmjs.org/@aws-sdk%2fclient-s3 3133ms (cache updated)
+31 http fetch GET 200 https://registry.npmjs.org/@eslint%2feslintrc 3213ms (cache revalidated)
+32 http fetch GET 200 https://registry.npmjs.org/eslint 3237ms (cache revalidated)
+33 http fetch GET 200 https://registry.npmjs.org/@types%2freact 3376ms (cache updated)
+34 http fetch GET 200 https://registry.npmjs.org/venobox 3401ms (cache revalidated)
+35 http fetch GET 200 https://registry.npmjs.org/zod 3439ms (cache miss)
+36 http fetch GET 200 https://registry.npmjs.org/react-dom 3848ms (cache updated)
+37 http fetch GET 200 https://registry.npmjs.org/react 4113ms (cache updated)
+38 http fetch GET 200 https://registry.npmjs.org/@types%2fnode 4143ms (cache updated)
+39 http fetch GET 200 https://registry.npmjs.org/react-hook-form 4202ms (cache miss)
+40 http fetch GET 200 https://registry.npmjs.org/eslint-config-next 4613ms (cache updated)
+41 http fetch GET 200 https://registry.npmjs.org/next 5942ms (cache updated)
+42 http fetch GET 200 https://registry.npmjs.org/jquery 12385ms (cache revalidated)
+43 verbose cwd d:\Software Projects\tacommodity-nextjs
+44 verbose os Windows_NT 10.0.22631
+45 verbose node v22.14.0
+46 verbose npm  v11.11.0
+47 verbose exit 1
+48 verbose code 1

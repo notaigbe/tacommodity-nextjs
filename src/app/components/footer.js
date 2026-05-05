@@ -104,6 +104,10 @@ export function TACommodityFooter() {
                     <i className="bx bx-chevron-right"></i>{" "}
                     <Link href="/#contact">Contact</Link>
                   </li>
+                  <li>
+                    <i className="bx bx-chevron-right"></i>{" "}
+                    <Link href="/careers">Careers</Link>
+                  </li>
                 </ul>
               </div>
 
@@ -275,6 +279,10 @@ export function PHAGROFooter() {
                   <li>
                     <i className="bx bx-chevron-right"></i>{" "}
                     <Link href="/#contact">Contact</Link>
+                  </li>
+                  <li>
+                    <i className="bx bx-chevron-right"></i>{" "}
+                    <Link href="/careers">Careers</Link>
                   </li>
                 </ul>
               </div>
