@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -99,7 +99,7 @@ const SectionHeading = ({ children }) => (
   </h5>
 );
 
-export default function CareersApplyPage() {
+function ApplyForm() {
   const [submitStatus, setSubmitStatus] = useState(null);
   const [errorMessage, setErrorMessage] = useState("");
   const [fileName, setFileName] = useState("");
@@ -640,5 +640,13 @@ export default function CareersApplyPage() {
         </div>
       </section>
     </BrandWrapper>
+  );
+}
+
+export default function CareersApplyPage() {
+  return (
+    <Suspense>
+      <ApplyForm />
+    </Suspense>
   );
 }
