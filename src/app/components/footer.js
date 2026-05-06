@@ -12,7 +12,7 @@ export function TACommodityFooter() {
         <div className="footer-top">
           <div className="container">
             <div className="row">
-              <div className="col-lg-4 col-md-6 footer-info">
+              <div className="col-lg-3 col-md-6 footer-info">
                 <h3>TA Commodity</h3>
                 <Link href="/">
                   <Image
@@ -74,7 +74,7 @@ export function TACommodityFooter() {
               </div>
 
               <div className="col-lg-3 col-md-6 footer-links">
-                <h4>Useful Links</h4>
+                <h4>Quick Menu</h4>
                 <ul>
                   <li>
                     <i className="bx bx-chevron-right"></i>{" "}
@@ -104,32 +104,31 @@ export function TACommodityFooter() {
                     <i className="bx bx-chevron-right"></i>{" "}
                     <Link href="/#contact">Contact</Link>
                   </li>
+                </ul>
+              </div>
+
+              <div className="col-lg-3 col-md-6 footer-links">
+            <h4>Subsidiaries</h4>
+            <ul>
+              <li><i className="bx bx-chevron-right"></i> <Link href="/friends-of-smart-plantation-growers-initiative">Friends of Smart Plantation Growers Initiative</Link></li>
+              <li><i className="bx bx-chevron-right"></i> <Link href="/women-sustainable-group">Women Sustainable Group</Link></li>
+              <li><i className="bx bx-chevron-right"></i> <Link href="/bfg-capital-management">BFG Capital Management</Link></li>
+              <li><i className="bx bx-chevron-right"></i> <Link href="/commodity-and-trade">Commodity and Trade</Link></li>
+            </ul>
+          </div>
+
+              <div className="col-lg-3 col-md-6 footer-links">
+                <h4>Resources</h4>
+                <ul>
                   <li>
                     <i className="bx bx-chevron-right"></i>{" "}
                     <Link href="/careers">Careers</Link>
                   </li>
+                  <li>
+                    <i className="bx bx-chevron-right"></i>{" "}
+                    <Link href="/commodity-and-trade">Commodity and Trade</Link>
+                  </li>
                 </ul>
-              </div>
-
-              {/* <!--div className="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i className="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i className="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i className="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i className="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i className="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-            </ul>
-          </div--> */}
-
-              <div className="col-lg-4 col-md-6 footer-newsletter">
-                <h4>Our Newsletter</h4>
-                <p>Subscribe to our newsletter</p>
-                <form action="" method="post">
-                  <input type="email" name="email" />
-
-                  <input type="submit" value="Subscribe" />
-                </form>
               </div>
             </div>
           </div>

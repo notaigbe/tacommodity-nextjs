@@ -5,22 +5,37 @@ import "../styles/style.css";
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import { List, X, ChevronDown } from "react-bootstrap-icons";
 
 export function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
-    // Scroll effects
+    const id = setTimeout(() => {
+      const scrolled = window.scrollY > 100;
+      const header = document.querySelector('#header');
+      if (header) {
+        header.classList.toggle('fixed-top', scrolled);
+        header.nextElementSibling?.classList.toggle('scrolled-offset', scrolled);
+      }
+      document.querySelector('.back-to-top')?.classList.toggle('active', scrolled);
+    }, 0);
+    return () => clearTimeout(id);
+  }, [pathname]);
+
+  useEffect(() => {
     const handleScroll = () => {
       const scrolled = window.scrollY > 100;
       const header = document.querySelector('#header');
-      const topbar = document.querySelector('#topbar');
       const backToTop = document.querySelector('.back-to-top');
 
-      if (header) header.classList.toggle('header-scrolled', scrolled);
-      if (topbar) topbar.classList.toggle('topbar-hidden', scrolled);
+      if (header) {
+        header.classList.toggle('fixed-top', scrolled);
+        header.nextElementSibling?.classList.toggle('scrolled-offset', scrolled);
+      }
       if (backToTop) backToTop.classList.toggle('active', scrolled);
     };
 
@@ -28,9 +43,12 @@ export function Header() {
     const preloader = document.querySelector('#preloader');
     if (preloader) preloader.remove();
 
-    handleScroll();
+    const id = setTimeout(handleScroll, 0);
     window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    return () => {
+      clearTimeout(id);
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
   // Close menu when navigating
@@ -119,7 +137,7 @@ export function Header() {
                 <ChevronDown size={16} style={{ transition: 'transform 0.3s' }} />
               </button>
 
-              <ul style={{ display: dropdownOpen ? 'block' : 'none' }}>
+              <ul>
                 <li>
                   <Link 
                     href="/friends-of-smart-plantation-growers-initiative"
@@ -187,23 +205,40 @@ export function Header() {
 
 export function PHAGROHeader() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname();
+
+  useEffect(() => {
+    const id = setTimeout(() => {
+      const scrolled = window.scrollY > 100;
+      const header = document.querySelector('#header');
+      if (header) {
+        header.classList.toggle('fixed-top', scrolled);
+        header.nextElementSibling?.classList.toggle('scrolled-offset', scrolled);
+      }
+    }, 0);
+    return () => clearTimeout(id);
+  }, [pathname]);
 
   useEffect(() => {
     const handleScroll = () => {
       const scrolled = window.scrollY > 100;
       const header = document.querySelector('#header');
-      const topbar = document.querySelector('#topbar');
 
-      if (header) header.classList.toggle('header-scrolled', scrolled);
-      if (topbar) topbar.classList.toggle('topbar-hidden', scrolled);
+      if (header) {
+        header.classList.toggle('fixed-top', scrolled);
+        header.nextElementSibling?.classList.toggle('scrolled-offset', scrolled);
+      }
     };
 
     const preloader = document.querySelector('#preloader');
     if (preloader) preloader.remove();
 
-    handleScroll();
+    const id = setTimeout(handleScroll, 0);
     window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    return () => {
+      clearTimeout(id);
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
   const closeMenu = () => {
@@ -285,23 +320,40 @@ export function PHAGROHeader() {
 
 export function BFGHeader() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname();
+
+  useEffect(() => {
+    const id = setTimeout(() => {
+      const scrolled = window.scrollY > 100;
+      const header = document.querySelector('#header');
+      if (header) {
+        header.classList.toggle('fixed-top', scrolled);
+        header.nextElementSibling?.classList.toggle('scrolled-offset', scrolled);
+      }
+    }, 0);
+    return () => clearTimeout(id);
+  }, [pathname]);
 
   useEffect(() => {
     const handleScroll = () => {
       const scrolled = window.scrollY > 100;
       const header = document.querySelector('#header');
-      const topbar = document.querySelector('#topbar');
 
-      if (header) header.classList.toggle('header-scrolled', scrolled);
-      if (topbar) topbar.classList.toggle('topbar-hidden', scrolled);
+      if (header) {
+        header.classList.toggle('fixed-top', scrolled);
+        header.nextElementSibling?.classList.toggle('scrolled-offset', scrolled);
+      }
     };
 
     const preloader = document.querySelector('#preloader');
     if (preloader) preloader.remove();
 
-    handleScroll();
+    const id = setTimeout(handleScroll, 0);
     window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    return () => {
+      clearTimeout(id);
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
   const closeMenu = () => {

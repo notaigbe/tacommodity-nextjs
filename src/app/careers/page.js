@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import Link from "next/link";
+import Script from "next/script";
 import BrandWrapper from "@/app/components/BrandWrapper";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "boxicons/css/boxicons.css";
@@ -354,6 +355,11 @@ export default function CareersPage() {
           </div>
         </div>
       </section>
+      {/* ✅ Optimized Script Loading */}
+      <Script src="/assets/js/main.js" strategy="lazyOnload" defer />
+      <Script src="assets/vendor/isotope-layout/isotope.pkgd.min.js" />
+              <Script src="https://code.jquery.com/jquery-3.6.4.slim.min.js" />
+      {/* <Script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js" strategy="lazyOnload" defer /> */}
     </BrandWrapper>
   );
 }

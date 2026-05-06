@@ -1,5 +1,6 @@
 "use client";
 
+import Script from "next/script";
 import { useState, useRef, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import { useForm } from "react-hook-form";
@@ -639,6 +640,11 @@ function ApplyForm() {
 
         </div>
       </section>
+      {/* ✅ Optimized Script Loading */}
+      <Script src="/assets/js/main.js" strategy="lazyOnload" defer />
+      <Script src="assets/vendor/isotope-layout/isotope.pkgd.min.js" />
+      <Script src="https://code.jquery.com/jquery-3.6.4.slim.min.js" />
+      {/* <Script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js" strategy="lazyOnload" defer /> */}
     </BrandWrapper>
   );
 }

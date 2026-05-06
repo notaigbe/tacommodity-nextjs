@@ -69,7 +69,7 @@ export function TACommodityContact() {
             </div>
           </div>
 
-          <div className="col-lg-12" data-aos="fade-up" data-aos-delay="300">
+          {/* <div className="col-lg-12" data-aos="fade-up" data-aos-delay="300">
             <div className="section-title">
               <h2>Get a Quick Quote</h2>
             </div>
@@ -79,7 +79,7 @@ export function TACommodityContact() {
               role="form"
               className="php-email-form"
             >
-              {/* {% csrf_token %} */}
+              
               <div className="row">
                 <div className="col-lg-6 form-group">
                   <input
@@ -141,7 +141,7 @@ export function TACommodityContact() {
                 <button type="submit">Send Message</button>
               </div>
             </form>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
