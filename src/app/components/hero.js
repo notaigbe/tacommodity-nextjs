@@ -53,7 +53,7 @@ export default function Hero() {
                   {/* <Link href="https://farmfresh.onrender.com" className="btn-get-started animate__animated animate__fadeInUp scrollto">
                     Shop <i className="bx bx-cart bx-fade-right bx-flip-horizontal"></i>
                   </Link> */}
-                  <Link href="/commodity-and-trade" className="btn-get-started animate__animated animate__fadeInUp scrollto">
+                  <Link href="/commodity-and-trade" className="btn-get-started animate__animated animate__fadeInUp scrollto shadow-lg">
                     Commodity and Trade <i className="bx bx-cart bx-fade-right bx-flip-horizontal"></i>
                   </Link>
                 </div>
