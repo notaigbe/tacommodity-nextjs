@@ -1,67 +1,58 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/style.css";
 
+const offerings = [
+  {
+    number: "01",
+    icon: "bi-truck",
+    title: "Logistics",
+    description:
+      "We provide warehousing, logistics handling and haulage services for agro commodities, delivering to processing companies and consumers across the country.",
+  },
+  {
+    number: "02",
+    icon: "bi-mortarboard",
+    title: "Training",
+    description:
+      "We train farmers on modern practices, smart agriculture and the use of technology, with the aim of developing smallholder farmers into commercial farmers.",
+  },
+  {
+    number: "03",
+    icon: "bi-bank",
+    title: "Financing",
+    description:
+      "We promote financial inclusion amongst smallholder farmers through collaboration with selected insurance and financial institutions.",
+  },
+];
+
 export default function WhatWeDo() {
   return (
-    <section id="what-we-do" className="services bg-light">
+    <section id="what-we-do" className="wwd-section">
       <div className="container" data-aos="fade-up">
         <div className="section-title">
           <h2>What We Do</h2>
         </div>
 
-        <div className="row">
-          <div
-            className="col-lg-4 col-md-6 icon-box border p-3 bg-white"
-            data-aos="fade-up"
-            data-aos-delay="300"
-            style={{ borderRadius: 20 }}
-          >
-            <div className="icon">
-              <i className="bi bi-broadcast"></i>
+        <div className="wwd-list">
+          {offerings.map((item, i) => (
+            <div
+              key={item.number}
+              className="wwd-row"
+              data-aos="fade-up"
+              data-aos-delay={i * 100}
+            >
+              <div className="wwd-left">
+                <span className="wwd-num">{item.number}</span>
+                <div className="wwd-icon-wrap">
+                  <i className={`bi ${item.icon}`}></i>
+                </div>
+              </div>
+              <div className="wwd-body">
+                <h4 className="wwd-title">{item.title}</h4>
+                <p className="wwd-desc">{item.description}</p>
+              </div>
             </div>
-            <h4 className="title">
-              <a href="">Logistics</a>
-            </h4>
-            <p className="description lead" style={{ fontSize: 20 }}>
-              We provide warehousing, logistics handling and haulage service for
-              agro commodities to deliver to processing companies and consumers.
-            </p>
-          </div>
-          <div
-            className="col-lg-4 col-md-6 icon-box border p-3 bg-white"
-            data-aos="fade-up"
-            data-aos-delay="400"
-            style={{ borderRadius: 20 }}
-          >
-            <div className="icon">
-              <i className="bi bi-brightness-high"></i>
-            </div>
-            <h4 className="title">
-              <a href="">Training</a>
-            </h4>
-            <p className="description lead" style={{ fontSize: 20 }}>
-              Training of farmers on modern practices and the use of Technology,
-              Smart Agriculture in farming business with the aim of developing
-              smallholder farmers into commercial farmers.
-            </p>
-          </div>
-          <div
-            className="col-lg-4 col-md-6 icon-box border p-3 bg-white"
-            data-aos="fade-up"
-            data-aos-delay="500"
-            style={{ borderRadius: 20 }}
-          >
-            <div className="icon">
-              <i className="bi bi-calendar2-week"></i>
-            </div>
-            <h4 className="title">
-              <a href="">Financing</a>
-            </h4>
-            <p className="description lead" style={{ fontSize: 20 }}>
-              We promote financial inclusion amongst smallholder farmers through
-              collaboration with selected insurance and financial institutions.
-            </p>
-          </div>
+          ))}
         </div>
       </div>
     </section>

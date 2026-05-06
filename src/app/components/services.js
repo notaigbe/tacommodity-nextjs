@@ -1,6 +1,29 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/style.css";
-import Image from "next/image";
+
+const values = [
+  {
+    number: "01",
+    icon: "bi-people",
+    title: "Development",
+    description:
+      "We believe that our smallholder farmers who deliver our farm produce be trained and developed into commercial farmers over a period of time.",
+  },
+  {
+    number: "02",
+    icon: "bi-lightbulb",
+    title: "Innovation",
+    description:
+      "We grow with our farmers through innovation, training and application of technology in smallholder farm development.",
+  },
+  {
+    number: "03",
+    icon: "bi-shield-check",
+    title: "Integrity",
+    description:
+      "We integrate honesty, integrity and business ethics into all aspects of our business to attract more prospective farmers into our various farm projects.",
+  },
+];
 
 export default function Services() {
   return (
@@ -10,55 +33,24 @@ export default function Services() {
           <h2>Core Values</h2>
         </div>
 
-        <div className="row">
-          <div className="col-lg-4 col-md-6 icon-box border p-3 bg-success text-light" data-aos="fade-up" style={{ borderRadius: 20 }}>
-            <div className="icon">
-              <i className="bi bi-chat-left-dots"></i>
+        <div className="row g-4">
+          {values.map((item, i) => (
+            <div
+              key={item.number}
+              className="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay={i * 100}
+            >
+              <div className="cv-card">
+                <span className="cv-number">{item.number}</span>
+                <div className="cv-icon-wrap">
+                  <i className={`bi ${item.icon}`}></i>
+                </div>
+                <h4 className="cv-title">{item.title}</h4>
+                <p className="cv-desc">{item.description}</p>
+              </div>
             </div>
-            <h4 className="title">
-              <a href="">Development</a>
-            </h4>
-            <p className="description lead" style={{ fontSize: 20 }}>
-              We believe that our smallholder farmers who deliver our farm
-              produce be trained and developed into commercial farmers over a
-              period of time.
-            </p>
-          </div>
-          <div
-            className="col-lg-4 col-md-6 icon-box border p-3 bg-success text-light"
-            data-aos="fade-up"
-            data-aos-delay="100"
-            style={{ borderRadius: 20 }}
-          >
-            <div className="icon">
-              <i className="bi bi-bounding-box"></i>
-            </div>
-            <h4 className="title">
-              <a href="">Innovation</a>
-            </h4>
-            <p className="description lead" style={{ fontSize: 20 }}>
-              We grow with our farmers through innovation, training and
-              application of technology in smallholder farm development.
-            </p>
-          </div>
-          <div
-            className="col-lg-4 col-md-6 icon-box border p-3 bg-success text-light"
-            data-aos="fade-up"
-            data-aos-delay="200"
-            style={{ borderRadius: 20 }}
-          >
-            <div className="icon">
-              <i className="bi bi-globe"></i>
-            </div>
-            <h4 className="title">
-              <a href="">Integrity</a>
-            </h4>
-            <p className="description lead" style={{ fontSize: 20 }}>
-              We integrate honesty, integrity and business ethics into all
-              aspects of our smallholder farm development business to attract
-              more prospective farmers into our various farm projects.
-            </p>
-          </div>
+          ))}
         </div>
       </div>
     </section>

@@ -90,9 +90,10 @@ export default function CareersCTA() {
           <p
             style={{
               color: "rgba(255,255,255,0.72)",
-              maxWidth: "560px",
+              maxWidth: "640px",
               margin: "0 auto",
               lineHeight: 1.7,
+              fontSize: "1.5rem",
             }}
           >
             We are always looking for driven, purpose-led individuals ready to make a
@@ -124,7 +125,7 @@ export default function CareersCTA() {
                   style={{ fontSize: "2rem", color: "#55aa82", display: "block", marginBottom: "14px" }}
                 />
                 <h5 style={{ color: "#fff", fontWeight: 700, marginBottom: "8px" }}>{p.title}</h5>
-                <p style={{ color: "rgba(255,255,255,0.65)", fontSize: "0.9rem", margin: 0, lineHeight: 1.65 }}>
+                <p style={{ color: "rgba(255,255,255,0.65)", fontSize: "1.2rem", margin: 0, lineHeight: 1.65 }}>
                   {p.desc}
                 </p>
               </div>
