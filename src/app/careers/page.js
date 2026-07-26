@@ -138,9 +138,9 @@ export default function CareersPage() {
             markets. We are building a team of dedicated professionals who believe that
             agriculture is the engine of Nigeria&apos;s future — and yours.
           </p>
-          <Link
-            href="/careers/apply"
+          <span
             className="btn btn-lg"
+            aria-disabled="true"
             style={{
               background: "#55aa82",
               color: "#fff",
@@ -148,10 +148,13 @@ export default function CareersPage() {
               padding: "14px 40px",
               borderRadius: "6px",
               fontSize: "1rem",
+              opacity: 0.5,
+              cursor: "not-allowed",
+              pointerEvents: "none",
             }}
           >
             <i className="bi bi-send me-2"></i>Apply Now
-          </Link>
+          </span>
         </div>
       </section>
 
@@ -254,19 +257,22 @@ export default function CareersPage() {
                     {job.summary}
                   </p>
 
-                  <Link
-                    href={`/careers/apply?position=${encodeURIComponent(job.title)}`}
+                  <span
                     className="btn btn-sm"
+                    aria-disabled="true"
                     style={{
                       background: "#214f3c",
                       color: "#fff",
                       fontWeight: 600,
                       borderRadius: "5px",
                       padding: "7px 20px",
+                      opacity: 0.5,
+                      cursor: "not-allowed",
+                      pointerEvents: "none",
                     }}
                   >
                     Apply for this Role
-                  </Link>
+                  </span>
                 </div>
               </div>
             ))}
@@ -290,19 +296,22 @@ export default function CareersPage() {
               Send us an open application — we review all submissions and will reach out when a
               suitable opportunity arises.
             </p>
-            <Link
-              href="/careers/apply"
+            <span
               className="btn"
+              aria-disabled="true"
               style={{
                 background: "#214f3c",
                 color: "#fff",
                 fontWeight: 600,
                 padding: "10px 28px",
                 borderRadius: "6px",
+                opacity: 0.5,
+                cursor: "not-allowed",
+                pointerEvents: "none",
               }}
             >
               Submit Open Application
-            </Link>
+            </span>
           </div>
         </div>
       </section>
