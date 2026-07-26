@@ -574,7 +574,7 @@ function ApplyForm() {
                   <div className="text-center">
                     <button
                       type="submit"
-                      disabled={isSubmitting}
+                      disabled
                       className="btn px-5 py-2"
                       style={{
                         background: "#214f3c",
@@ -582,24 +582,12 @@ function ApplyForm() {
                         fontWeight: 600,
                         letterSpacing: "0.5px",
                         minWidth: "200px",
-                        opacity: isSubmitting ? 0.75 : 1,
+                        opacity: 0.5,
+                        cursor: "not-allowed",
                       }}
                     >
-                      {isSubmitting ? (
-                        <>
-                          <span
-                            className="spinner-border spinner-border-sm me-2"
-                            role="status"
-                            aria-hidden="true"
-                          ></span>
-                          Sending Application&hellip;
-                        </>
-                      ) : (
-                        <>
-                          <i className="bi bi-send me-2"></i>
-                          Submit Application
-                        </>
-                      )}
+                      <i className="bi bi-send me-2"></i>
+                      Applications Closed
                     </button>
                   </div>
                 </form>
