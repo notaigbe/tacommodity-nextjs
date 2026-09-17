@@ -29,6 +29,7 @@
 .hero {
   position: relative;
   isolation: isolate;
+  min-height: min(60vh, 560px);
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -73,7 +74,7 @@
 }
 
 .heroLead {
-  max-width: 55ch;
+  max-width: 46ch;
   margin: 0 0 32px;
   color: rgba(255, 255, 255, 0.88);
   font-size: clamp(1.05rem, 1.6vw, 1.3rem);
@@ -85,6 +86,19 @@
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
+}
+
+@media (max-width: 575.98px) {
+  .heroActions,
+  .closingActions {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .heroActions > a,
+  .closingActions > a {
+    justify-content: center;
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {
