@@ -24,6 +24,7 @@ import Clients from "./components/clients";
 import CareersCTA from "./components/careers-cta";
 import Script from "next/script";
 import BrandWrapper from "./components/BrandWrapper";
+import HashScroll from "./components/hash-scroll";
 
 export default function Home() {
   const [mounted, setMounted] = useState(false);
@@ -57,6 +58,7 @@ useEffect(() => {
 
   return (
     <BrandWrapper brand="TA">
+      <HashScroll />
       {/* <Topbar />
       <Header /> */}
       <Hero />

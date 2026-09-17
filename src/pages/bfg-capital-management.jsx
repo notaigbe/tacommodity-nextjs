@@ -64,7 +64,9 @@ export default function LandingPage() {
           property="og:description"
           content="Empowering smallholder farmers and rural communities through comprehensive agricultural solutions, renewable energy, and sustainable development in Nigeria."
         />
-        <meta property="og:image" content="/assets/img/bfg_logo.png" />
+        <link rel="canonical" href="https://tacommodity.com/bfg-capital-management" />
+        <meta property="og:site_name" content="BFG Capital Management" />
+        <meta property="og:image" content="https://tacommodity.com/assets/img/bfg_logo.png" />
         <meta
           property="og:url"
           content="https://tacommodity.com/bfg-capital-management"
@@ -79,7 +81,7 @@ export default function LandingPage() {
           name="twitter:description"
           content="Transforming agriculture into viable business through end-to-end solutions for smallholder farmers in Nigeria."
         />
-        <meta name="twitter:image" content="/assets/img/bfg_logo.png" />
+        <meta name="twitter:image" content="https://tacommodity.com/assets/img/bfg_logo.png" />
         {/* Favicon */}
         <link rel="icon" href="/assets/img/bfg/favicon.ico" />
         <link rel="apple-touch-icon" href="/assets/img/bfg_logo.png" />

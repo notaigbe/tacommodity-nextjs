@@ -1,0 +1,435 @@
+.section {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.tinted {
+  background: #f4f8f6;
+}
+
+.dark {
+  background: linear-gradient(135deg, #1a3d2e 0%, #214f3c 100%);
+}
+
+.centered {
+  text-align: center;
+  max-width: 820px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  padding: 120px 0 110px;
+  overflow: hidden;
+  background: #1a3d2e;
+}
+
+.heroImage {
+  object-fit: cover;
+  opacity: 0.28;
+}
+
+.heroInner {
+  position: relative;
+  text-align: center;
+}
+
+.eyebrow,
+.eyebrowDark {
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+  color: #55aa82;
+}
+
+.eyebrowDark {
+  color: #2d6b52;
+}
+
+.heroTitle {
+  color: #fff;
+  font-family: var(--font-raleway), sans-serif;
+  font-weight: 800;
+  font-size: clamp(2.2rem, 6vw, 3.6rem);
+  line-height: 1.15;
+  margin-bottom: 14px;
+}
+
+.heroSubtitle {
+  color: #cfe8db;
+  font-family: var(--font-raleway), sans-serif;
+  font-weight: 600;
+  font-size: clamp(1.1rem, 2.6vw, 1.8rem);
+  margin-bottom: 18px;
+}
+
+.heroLead {
+  color: rgba(255, 255, 255, 0.78);
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  line-height: 1.75;
+  font-style: italic;
+}
+
+/* Typography */
+.heading {
+  font-family: var(--font-raleway), sans-serif;
+  font-weight: 800;
+  color: #1a3d2e;
+  font-size: clamp(1.7rem, 3.5vw, 2.3rem);
+  margin-bottom: 22px;
+}
+
+.body,
+.bodyLight {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #4a5a52;
+  margin-bottom: 18px;
+}
+
+.body strong {
+  color: #1a3d2e;
+}
+
+.bodyLight {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.bodyLight strong {
+  color: #fff;
+}
+
+.pullQuote {
+  font-family: var(--font-raleway), sans-serif;
+  font-size: clamp(1.4rem, 3vw, 1.95rem);
+  font-weight: 700;
+  line-height: 1.45;
+  color: #214f3c;
+  border-left: 5px solid #55aa82;
+  padding-left: 28px;
+  margin: 0;
+}
+
+/* Highlight stats */
+.statCard {
+  height: 100%;
+  padding: 30px 26px;
+  background: #f9fcfa;
+  border: 1px solid #e2ede8;
+  border-top: 4px solid #214f3c;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.statCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(33, 79, 60, 0.12);
+}
+
+.statValue {
+  font-family: var(--font-raleway), sans-serif;
+  font-size: clamp(2rem, 4vw, 2.6rem);
+  font-weight: 800;
+  color: #214f3c;
+  line-height: 1.1;
+}
+
+.statUnit {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #55aa82;
+}
+
+.statLabel {
+  margin: 10px 0 0;
+  color: #5a6a62;
+  font-size: 0.92rem;
+}
+
+/* Growth chart */
+.chartCard {
+  background: #fff;
+  border: 1px solid #ddeae2;
+  border-radius: 12px;
+  padding: 28px 32px;
+  box-shadow: 0 8px 24px rgba(33, 79, 60, 0.06);
+  margin-bottom: 36px;
+}
+
+.chartHeader {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #7a8a82;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #e8f0eb;
+}
+
+.chart {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.chartRow {
+  display: grid;
+  grid-template-columns: 170px 1fr 170px;
+  align-items: center;
+  gap: 20px;
+  padding: 16px 0;
+  border-bottom: 1px solid #f0f5f2;
+}
+
+.chartRow:last-child {
+  border-bottom: none;
+}
+
+.chartYear strong {
+  display: block;
+  color: #1a3d2e;
+  font-size: 1.1rem;
+}
+
+.chartYear small {
+  color: #7a8a82;
+  font-size: 0.8rem;
+}
+
+.chartTrack {
+  height: 14px;
+  background: #edf5f1;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.chartBar {
+  height: 100%;
+  background: linear-gradient(90deg, #2d6b52, #55aa82);
+  border-radius: 999px;
+}
+
+.chartBarHighlight {
+  background: linear-gradient(90deg, #214f3c, #3ecb8a);
+}
+
+.chartValue {
+  text-align: right;
+  font-weight: 700;
+  color: #214f3c;
+  font-size: 1.05rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.chartValue span {
+  font-weight: 500;
+  color: #7a8a82;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 60px 0;
+  }
+
+  .chartCard {
+    padding: 20px 18px;
+  }
+
+  /* Too narrow for both labels; the rows already read as "year … tons". */
+  .chartHeader span:first-child {
+    display: none;
+  }
+
+  .chartRow {
+    grid-template-columns: 1fr auto;
+    gap: 8px 12px;
+  }
+
+  .chartTrack {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+}
+
+/* Partnership image */
+.imageFrame {
+  border-radius: 14px;
+  overflow: hidden;
+  aspect-ratio: 4 / 5; /* centre crop of a 4:3 photo keeps the farmer central */
+  box-shadow: 0 18px 40px rgba(26, 61, 46, 0.18);
+}
+
+/* Growth section over a field photograph */
+.growth {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: #12261c;
+}
+
+.growthImage {
+  object-fit: cover;
+  object-position: center 45%;
+  opacity: 0.3; /* keeps the white chart card and light type legible */
+  z-index: -1;
+}
+
+.growthInner {
+  position: relative;
+}
+
+/* The section heading comes from the shared .section-title styles */
+.growth :global(.section-title) h2 {
+  color: #fff;
+}
+
+.growth :global(.section-title) h2::after,
+.growth :global(.section-title) h2::before {
+  background: #55aa82;
+}
+
+.growth :global(.section-title) p {
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.growth .chartCard {
+  background: #fff;
+  border-color: rgba(255, 255, 255, 0.55);
+  box-shadow: 0 20px 45px rgba(6, 20, 13, 0.4);
+}
+
+/* Full-width tracking area: the card dodges the cursor, so the pointer must be
+   measured against something that stays put, or the card would flicker as it
+   moved out from under the mouse. */
+.dodgeZone {
+  position: relative;
+}
+
+@media (hover: hover) and (min-width: 992px) {
+  .chartCard {
+    transition: width 0.55s cubic-bezier(0.25, 1, 0.5, 1),
+      margin-left 0.55s cubic-bezier(0.25, 1, 0.5, 1);
+  }
+
+  .chartCardHalf {
+    width: 50%;
+  }
+
+  /* Width and left margin animate together on the same curve, so the right
+     edge stays put and the card shrinks toward the right-hand half. */
+  .chartCardRight {
+    margin-left: 50%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .chartCard {
+    transition: none;
+  }
+}
+
+/* The muted greys lose contrast once the photo shows through. */
+.growth .chartHeader,
+.growth .chartYear small,
+.growth .chartValue span {
+  color: #4a5a52;
+}
+
+.growth .chartHeader {
+  border-bottom-color: rgba(33, 79, 60, 0.18);
+}
+
+.growth .chartRow {
+  border-bottom-color: rgba(33, 79, 60, 0.12);
+}
+
+/* Excellence values */
+.valueCard {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 22px 26px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.valueCard i {
+  font-size: 2rem;
+  color: #55aa82;
+}
+
+/* Closing */
+.closing {
+  padding: 90px 0;
+  background: #f4f8f6;
+  border-top: 1px solid #d8e9e1;
+}
+
+.closingIcon {
+  font-size: 3rem;
+  color: #55aa82;
+}
+
+.closingQuote {
+  font-family: var(--font-raleway), sans-serif;
+  font-size: clamp(1.3rem, 3vw, 1.85rem);
+  font-weight: 700;
+  font-style: italic;
+  line-height: 1.5;
+  color: #1a3d2e;
+  max-width: 860px;
+  margin: 16px auto 20px;
+}
+
+.closingNote {
+  color: #4a5a52;
+  font-size: 1.05rem;
+  margin: 0;
+}
+
+.btnPrimary,
+.btnOutline {
+  display: inline-flex;
+  align-items: center;
+  padding: 13px 34px;
+  border-radius: 6px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.btnPrimary {
+  background: #214f3c;
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(33, 79, 60, 0.25);
+}
+
+.btnPrimary:hover {
+  background: #1a3d2e;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.btnOutline {
+  border: 2px solid #214f3c;
+  color: #214f3c;
+}
+
+.btnOutline:hover {
+  background: #214f3c;
+  color: #fff;
+}

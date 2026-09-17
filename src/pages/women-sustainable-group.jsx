@@ -27,7 +27,7 @@ export default function WomenSustainableGroup() {
     return (
         <BrandWrapper brand="PHAGRO">
             <Head>
-                <title>Women Sustainable Group</title>
+                <title>Women Sustainable Group | PHAGRO - Empowering Women &amp; Youth in Agriculture</title>
                 <meta
                     content="Discover how the Women Sustainable Group by TA Commodity Producers Co Nig Ltd empowers rural women and youth in Nigeria through agricultural cooperatives, providing essential training, market access, and financial support for sustainable farming enterprises."
                     name="description"
@@ -46,7 +46,10 @@ export default function WomenSustainableGroup() {
                     property="og:description"
                     content="Supporting women and youth in agriculture through cooperatives, training, and market access in Nigeria."
                 />
-                <meta property="og:image" content="/assets/img/phagro_logo.png" />
+                <link rel="canonical" href="https://tacommodity.com/women-sustainable-group" />
+                <meta property="og:site_name" content="PHAGRO" />
+                <meta property="og:type" content="website" />
+                <meta property="og:image" content="https://tacommodity.com/assets/img/phagro_logo.png" />
                 <meta
                     property="og:url"
                     content="https://tacommodity.com/women-sustainable-group"
@@ -60,7 +63,8 @@ export default function WomenSustainableGroup() {
                     name="twitter:description"
                     content="Promoting sustainable farming and economic growth for women and youth in Nigeria."
                 />
-                <meta name="twitter:image" content="/assets/img/phagro_logo.png" />
+                <meta name="twitter:image" content="https://tacommodity.com/assets/img/phagro_logo.png" />
+                <link rel="apple-touch-icon" href="/assets/img/phagro_logo.png" />
                 {/* Add a custom favicon for this page */}
                 <link rel="icon" href="/assets/img/phagro/favicon.ico" />
             </Head>
