@@ -30,10 +30,9 @@
   position: relative;
   isolation: isolate;
   overflow: hidden;
-  min-height: min(78vh, 680px);
   display: flex;
-  align-items: flex-end;
-  padding: 140px 0 clamp(56px, 8vw, 96px);
+  align-items: center;
+  padding: clamp(40px, 5vw, 64px) 0;
   background: #12261c;
 }
 
@@ -62,7 +61,7 @@
 }
 
 .heroTitle {
-  max-width: 13ch;
+  max-width: 18ch;
   margin: 0 0 20px;
   color: #fff;
   font-family: var(--font-raleway), sans-serif;
@@ -74,7 +73,7 @@
 }
 
 .heroLead {
-  max-width: 46ch;
+  max-width: 55ch;
   margin: 0 0 32px;
   color: rgba(255, 255, 255, 0.88);
   font-size: clamp(1.05rem, 1.6vw, 1.3rem);
